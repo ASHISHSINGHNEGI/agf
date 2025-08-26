@@ -3,13 +3,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #0d4a27;
+  --secondary: #f97316;
+  --accent: #f3f4f6;
+  --heading: "Poppins", sans-serif;
+  --body: "Inter", sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-secondary: #f97316;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--heading);
+  --font-body: var(--body);
+}
+@layer base {
+  body {
+    color: var(--color-primary);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
