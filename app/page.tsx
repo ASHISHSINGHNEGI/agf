@@ -1,27 +1,14 @@
 import Image from "next/image";
 import Card from "./components/card";
+import FeatureCard from "./components/FeatureCard";
+import About from "./pages/about/page";
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   return (
     <div className="font-sans">
-      {/* Header */}
-      <header className="flex justify-between items-center p-6 bg-white shadow">
-        <div className="text-2xl font-bold ">
-          <span className="">AGF</span> Anand Global Foods
-        </div>
-        <nav className="flex gap-6 text-gray-700">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Products</a>
-          <a href="#">Global Presence</a>
-          <a href="#" className="text-orange-600 font-semibold">
-            Contact Us
-          </a>
-        </nav>
-      </header>
-
       {/* Hero Section */}
-      <section className="relative bg-yellow-100 text-center text-white">
+      <section className="relative text-center text-white">
         <div className="absolute inset-0">
           <Image
             src="/heroImage.png" // replace with rice field image in /public
@@ -47,56 +34,20 @@ export default function Home() {
 
       {/* Highlights */}
       <section className="grid grid-cols-1 md:grid-cols-4 gap-6 p-8 text-center">
-        <Card text="🌍 Exporting to 83+ Countries" />
-        <Card text="☀️ 14+ Years of Excellence" />
-        <Card text="✅ 100% Premium Quality Certified" />
-        <Card text="🤝 Trusted by Global Distributors" />
+        <Card imgSrc="/earth-globe.svg" text="Exporting to 83+ Countries" />
+        <Card text="14+ Years of Excellence" imgSrc="/sun.svg" />
+        <Card text="100% Premium Quality Certified" imgSrc="/quality.svg" />
+        <Card text="Trusted by Global Distributors" imgSrc="/handshake.svg" />
       </section>
 
       {/* Featured Products */}
       <section className="p-10 text-center">
         <h2 className="text-3xl font-bold mb-8">Featured Products</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="shadow-lg rounded-xl p-4">
-            <Image
-              src="/basmati.jpg"
-              alt="Basmati Rice"
-              width={200}
-              height={200}
-              className="rounded-lg"
-            />
-            <p className="mt-4 font-semibold">Basmati Rice</p>
-          </div>
-          <div className="shadow-lg rounded-xl p-4">
-            <Image
-              src="/sugar.jpg"
-              alt="Sugar"
-              width={200}
-              height={200}
-              className="rounded-lg"
-            />
-            <p className="mt-4 font-semibold">Sugar</p>
-          </div>
-          <div className="shadow-lg rounded-xl p-4">
-            <Image
-              src="/tea.jpg"
-              alt="Tea"
-              width={200}
-              height={200}
-              className="rounded-lg"
-            />
-            <p className="mt-4 font-semibold">Tea</p>
-          </div>
-          <div className="shadow-lg rounded-xl p-4">
-            <Image
-              src="/chickpeas.jpg"
-              alt="Chickpeas"
-              width={200}
-              height={200}
-              className="rounded-lg"
-            />
-            <p className="mt-4 font-semibold">Chickpeas</p>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
+          <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.jpg" />
+          <FeatureCard text="Sugar" imgSrc="/image/products/sugar.jpg" />
+          <FeatureCard text="Tea" imgSrc="/image/products/tea.jpg" />
+          <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.jpg" />
         </div>
       </section>
     </div>
