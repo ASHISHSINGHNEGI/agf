@@ -33,26 +33,28 @@ export default function Home() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative text-center  min-h-[75vh]">
+      <section className="relative text-center flex flex-col-reverse min-h-[75vh] -mx-[2.1%] bg-black/40 ">
         <div className="absolute inset-0">
           <Gallery galleryImages={galleryImages} />
-          {/* <div className="absolute inset-0 bg-black/40"></div> */}
+          <div className="absolute inset-0"></div>
         </div>
-        <div className="relative z-10  flex flex-col justify-items-end bg-amber-100">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Every Grain, A Promise Kept
-          </h1>
-          <p className="text-lg md:text-xl mb-6  text-white">
-            Exporting Trust. Taste & Tradition to 93+ Countries
-          </p>
-          <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold  text-white">
+        <div className="relative z-10  pb-30 pt-5 ">
+          <div className="flex flex-col justify-center items-center h-full">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white ">
+              Every Grain, A Promise Kept
+            </h1>
+            <p className="text-lg md:text-xl mb-6  text-white">
+              Exporting Trust. Taste & Tradition to 93+ Countries
+            </p>
+          </div>
+          <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold  text-white hover:bg-orange-600 hover:scale-105 transition-all duration-800 ease-in-out hover:shadow-lg">
             Explore Our Products
           </button>
         </div>
       </section>
 
       {/* Highlights */}
-      <section className="grid grid-cols-1 md:grid-cols-4 gap-6 p-8 text-center">
+      <section className=" grid grid-cols-1 md:grid-cols-4 gap-6 p-8 text-center ">
         <Card imgSrc="/earth-globe.svg" text="Exporting to 83+ Countries" />
         <Card text="14+ Years of Excellence" imgSrc="/sun.svg" />
         <Card text="100% Premium Quality Certified" imgSrc="/quality.svg" />
