@@ -16,7 +16,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center text-primary px-4 py-2 relative z-50">
+    <header className="w-full flex justify-between items-center text-primary px-4 py-2 relative z-50 ">
       {/* Logo */}
       <div className="font-bold">
         <Image
@@ -29,7 +29,7 @@ export default function NavBar() {
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex gap-6 text-primary text-lg">
+      <nav className="hidden md:flex gap-6 text-primary text-lg font-semibold">
         <Link href="/">
           <span className="hover:bg-secondary hover:text-white px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
             Home
