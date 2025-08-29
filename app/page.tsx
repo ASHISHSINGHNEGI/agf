@@ -1,32 +1,51 @@
 import Image from "next/image";
 import Card from "./components/card";
 import FeatureCard from "./components/FeatureCard";
-import About from "./pages/about/page";
-import NavBar from "./components/NavBar";
+import Gallery from "./components/gallery";
 
 export default function Home() {
+  const galleryImages = [
+    {
+      src: "/heroGallery/1.jpg",
+      alt: "A vast, sunlit rice paddy field during the day.",
+    },
+    {
+      src: "/heroGallery/2.jpg",
+      alt: "Farmers harvesting golden rice during sunset.",
+    },
+    {
+      src: "/heroGallery/3.jpg",
+      alt: "Woven sacks filled with high-quality white rice.",
+    },
+    {
+      src: "/heroGallery/4.jpg",
+      alt: "A close-up shot of individual grains of uncooked rice.",
+    },
+    {
+      src: "/heroGallery/5.jpg",
+      alt: "Stunning aerial view of cascading rice terraces.",
+    },
+    {
+      src: "/heroGallery/6.jpg",
+      alt: "A bowl of perfectly cooked, steaming white rice.",
+    },
+  ];
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative text-center text-white">
+      <section className="relative text-center  min-h-[75vh]">
         <div className="absolute inset-0">
-          <Image
-            src="/heroImage.png" // replace with rice field image in /public
-            alt="Rice Field"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <Gallery galleryImages={galleryImages} />
+          {/* <div className="absolute inset-0 bg-black/40"></div> */}
         </div>
-        <div className="relative z-10 py-24 px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="relative z-10  flex flex-col justify-items-end bg-amber-100">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             Every Grain, A Promise Kept
           </h1>
-          <p className="text-lg md:text-xl mb-6">
+          <p className="text-lg md:text-xl mb-6  text-white">
             Exporting Trust. Taste & Tradition to 93+ Countries
           </p>
-          <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold">
+          <button className="bg-orange-500 px-6 py-3 rounded-lg font-semibold  text-white">
             Explore Our Products
           </button>
         </div>
