@@ -1,46 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  /* --background: #f5f2d9; */
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #0d4a27;
-  --secondary: #f97316;
-  --accent: #f3f4f6;
-  --heading: "Poppins", sans-serif;
-  --body: "Poppins", sans-serif;
-  --horizontal-padding: 2%;
+    /*--background: #f5f2d9;*/
+    --background: #ffffff;
+    --foreground: #171717;
+    --primary: #0d4a27;
+    --secondary: #f97316;
+    --accent: #f3f4f6;
+    --heading: "Poppins", sans-serif;
+    --body: "Poppins", sans-serif;
+    --horizontal-padding: 2%;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-secondary: #f97316;
-  --font-sans: var(--font-poppins);
-  --font-mono: var(--font-poppins);
-  --font-heading: var(--heading);
-  --font-body: var(--body);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-secondary: #f97316;
+    --font-sans: var(--font-poppins);
+    --font-mono: var(--font-poppins);
+    --font-heading: var(--heading);
+    --font-body: var(--body);
 }
 @layer base {
-  body {
-    color: var(--color-primary);
-    padding-left: var(--horizontal-padding);
-    padding-right: var(--horizontal-padding);
-    font-family: var(--font-poppins), "Poppins", sans-serif;
-  }
+    body {
+        color: var(--color-primary);
+        padding-left: var(--horizontal-padding);
+        padding-right: var(--horizontal-padding);
+        font-family: var(--font-poppins), "Poppins", sans-serif;
+    }
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-poppins), "Poppins", sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-poppins), "Poppins", sans-serif;
 }
