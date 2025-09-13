@@ -19,13 +19,15 @@ export default function NavBar() {
     <header className="w-full flex justify-between items-center text-primary px-4 py-2 relative z-50 ">
       {/* Logo */}
       <div className="font-bold">
-        <Image
-          src="/logo/logoWithoutBg.png"
-          alt="AGF Logo"
-          width={120}
-          height={120}
-          className="w-auto h-12 md:h-16"
-        />
+        <Link href="/">
+          <Image
+            src="/logo/logoWithoutBg.png"
+            alt="AGF Logo"
+            width={120}
+            height={120}
+            className="w-auto h-12 md:h-16"
+          />
+        </Link>
       </div>
 
       {/* Desktop Navigation */}

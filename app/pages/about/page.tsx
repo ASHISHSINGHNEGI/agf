@@ -8,6 +8,7 @@ import {
   HeartIcon,
   CogIcon,
   TruckIcon,
+  SparklesIcon,
 } from "@heroicons/react/24/outline";
 
 export default function About() {
@@ -61,16 +62,53 @@ export default function About() {
     },
   ];
 
+  const coreValues = [
+    {
+      icon: <CheckCircleIcon className="w-8 h-8" />,
+      title: "Integrity First",
+      description: "Honesty & transparency in every deal.",
+      bgColor: "bg-primary",
+    },
+    {
+      icon: <SparklesIcon className="w-8 h-8" />,
+      title: "Quality Without Compromise",
+      description: "Every grain speaks of purity.",
+      bgColor: "bg-secondary",
+    },
+    {
+      icon: <HeartIcon className="w-8 h-8" />,
+      title: "Customer-Centric",
+      description: "We grow only when our customers grow.",
+      bgColor: "bg-primary",
+    },
+    {
+      icon: <GlobeAltIcon className="w-8 h-8" />,
+      title: "Sustainability & Responsibility",
+      description: "Eco-friendly farming & farmer empowerment.",
+      bgColor: "bg-secondary",
+    },
+    {
+      icon: <LightBulbIcon className="w-8 h-8" />,
+      title: "Innovation with Tradition",
+      description: "Blending heritage with world-class processes.",
+      bgColor: "bg-primary",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative bg-primary text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            About AGF
+            "More Than Rice, A Legacy of Trust"
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto text-gray-200 leading-relaxed">
-            Anand Global Foods - Where Heritage Meets Global Excellence
+            At AGF – Anand Global Foods, we are not just exporters, we are
+            custodians of a heritage. Every grain we deliver carries the soul of
+            Punjab's soil, nurtured by farmers who have perfected basmati
+            cultivation for centuries. With honesty, innovation, and global
+            standards, AGF brings India's finest rice to the world.
           </p>
         </div>
       </section>
@@ -165,10 +203,9 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-                To be the most trusted and preferred partner for global
-                importers and distributors, delivering premium quality
-                agricultural products while maintaining the highest standards of
-                food safety, ethical sourcing, and customer satisfaction.
+                To deliver pure, authentic basmati with uncompromised quality
+                and timely service — enriching meals worldwide while preserving
+                traditions.
               </p>
             </div>
 
@@ -177,10 +214,9 @@ export default function About() {
                 Our Vision
               </h3>
               <p className="text-gray-100 text-base sm:text-lg leading-relaxed">
-                To lead the global agri-export industry by combining traditional
-                Indian agricultural heritage with modern international trade
-                practices, creating sustainable value for all stakeholders
-                across the global food supply chain.
+                To be the world's most trusted name in premium basmati rice,
+                admired for our commitment to quality, authenticity, and
+                sustainability.
               </p>
             </div>
           </div>
@@ -199,45 +235,22 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircleIcon className="w-8 h-8 text-white" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            {coreValues.map((value, index) => (
+              <div key={index} className="text-center group">
+                <div
+                  className={`${value.bgColor} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}
+                >
+                  {value.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-primary mb-3">
+                  {value.title}
+                </h3>
+                <p className="text-gray-600 text-sm sm:text-base">
+                  {value.description}
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                Quality First
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                Every product meets international quality standards and food
-                safety regulations.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <HeartIcon className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                Customer Focus
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                Tailored solutions that meet the unique needs of different
-                markets and cultures.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <ShieldCheckIcon className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                Trust & Reliability
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                Building long-term partnerships based on consistency and
-                dependability.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>

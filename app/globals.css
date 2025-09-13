@@ -8,7 +8,7 @@
   --secondary: #f97316;
   --accent: #f3f4f6;
   --heading: "Poppins", sans-serif;
-  --body: "Inter", sans-serif;
+  --body: "Poppins", sans-serif;
   --horizontal-padding: 2%;
 }
 
@@ -18,8 +18,8 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-secondary: #f97316;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-poppins);
   --font-heading: var(--heading);
   --font-body: var(--body);
 }
@@ -28,6 +28,7 @@
     color: var(--color-primary);
     padding-left: var(--horizontal-padding);
     padding-right: var(--horizontal-padding);
+    font-family: var(--font-poppins), "Poppins", sans-serif;
   }
 }
 
@@ -41,5 +42,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), "Poppins", sans-serif;
 }

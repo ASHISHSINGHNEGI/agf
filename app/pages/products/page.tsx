@@ -11,7 +11,7 @@ const products = [
   {
     name: "Sugar",
     img: "/image/products/sugar.jpg",
-    description: "Refined sugar products meeting international standards",
+    description: "Refined sugar products meeting global standards",
     category: "Sweeteners",
   },
   {
