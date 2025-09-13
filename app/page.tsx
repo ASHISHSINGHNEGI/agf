@@ -55,10 +55,22 @@ export default function Home() {
 
       {/* Highlights */}
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 text-center">
-        <Card imgSrc="/earth-globe.svg" text="Exporting to 83+ Countries" />
-        <Card text="14+ Years of Excellence" imgSrc="/sun.svg" />
-        <Card text="100% Premium Quality Certified" imgSrc="/quality.svg" />
-        <Card text="Trusted by Global Distributors" imgSrc="/handshake.svg" />
+        <Card
+          imgSrc="/earth-globe.svg"
+          text="Global Reach, Local Expertise: Delivering to 83+ countries."
+        />
+        <Card
+          text="A Legacy of 14+ Years: Cultivating and exporting excellence."
+          imgSrc="/sun.svg"
+        />
+        <Card
+          text="Quality You Can Trace: Certified for purity from soil to ship."
+          imgSrc="/quality.svg"
+        />
+        <Card
+          text="The Partner of Choice: Building trust with global distributors."
+          imgSrc="/handshake.svg"
+        />
       </section>
 
       {/* Featured Products */}

@@ -3,28 +3,52 @@ import Image from "next/image";
 
 const products = [
   {
-    name: "Rice",
+    name: "Basmati Rice",
     img: "/image/products/rice.jpg",
-    description: "Premium quality rice varieties for global markets",
+    description: "Premium long-grain rice from the foothills of the Himalayas.",
     category: "Grains",
+    href: "/pages/products/rice",
+    details: [
+      "Origin: Punjab, India",
+      "Varieties: 1121 Basmati, Pusa Basmati",
+      "Certifications: ISO 22000, HACCP",
+    ],
   },
   {
-    name: "Sugar",
+    name: "Refined Sugar",
     img: "/image/products/sugar.jpg",
-    description: "Refined sugar products meeting global standards",
+    description: "High-purity crystalline sugar for domestic and industrial use.",
     category: "Sweeteners",
+    href: "#",
+    details: [
+      "Origin: Brazil & India",
+      "Type: ICUMSA 45",
+      "Certifications: ISO 9001, Halal",
+    ],
   },
   {
-    name: "Tea",
+    name: "Black Tea",
     img: "/image/products/tea.jpg",
-    description: "Finest tea leaves from select plantations",
+    description: "Full-bodied and aromatic black tea from select plantations.",
     category: "Beverages",
+    href: "#",
+    details: [
+      "Origin: Assam, India",
+      "Grade: CTC (Crush, Tear, Curl)",
+      "Certifications: Rainforest Alliance",
+    ],
   },
   {
-    name: "Chickpeas",
+    name: "Kabuli Chickpeas",
     img: "/image/products/chickpea.jpg",
-    description: "High-protein legumes for healthy consumption",
+    description: "Large, creamy chickpeas, perfect for a variety of cuisines.",
     category: "Pulses",
+    href: "#",
+    details: [
+      "Origin: India",
+      "Size: 8-10mm Caliber",
+      "Certifications: Non-GMO, Vegan",
+    ],
   },
 ];
 
@@ -77,6 +101,8 @@ export default function ProductsPage() {
                 description={product.description}
                 category={product.category}
                 alt={product.name}
+                details={product.details}
+                href={product.href}
               />
             ))}
           </div>

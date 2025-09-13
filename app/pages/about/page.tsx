@@ -15,50 +15,51 @@ export default function About() {
   const highlights = [
     {
       icon: <UserGroupIcon className="w-8 h-8" />,
-      title: "14+ Years of Global Leadership",
+      title: "A Legacy of Global Expertise",
       description:
-        "Backed by industry veterans with proven expertise in building global FMCG & food brands.",
+        "With over 14 years in the agri-export sector, our leadership brings deep experience in navigating global markets and building trusted food brands.",
     },
     {
       icon: <GlobeAltIcon className="w-8 h-8" />,
-      title: "Strong Global Presence",
+      title: "Our Fields, The World's Tables",
       description:
-        "Experience of scaling exports to 90+ countries across GCC, Middle East, Europe, Africa, Asia & North America.",
+        "We have a robust network that supplies premium agricultural products to over 90 countries, ensuring timely delivery across continents.",
     },
     {
       icon: <ShieldCheckIcon className="w-8 h-8" />,
-      title: "Diverse Premium Portfolio",
+      title: "A Portfolio of Purity",
       description:
-        "Specializing in Basmati Rice, Non-Basmati Rice, Tea, Chickpeas, Sesame Seeds, Spices & Sugar sourced with the highest quality standards.",
+        "We specialize in the highest quality Basmati Rice, Tea, Chickpeas, and more, all sourced with rigorous standards for authenticity.",
     },
     {
       icon: <HeartIcon className="w-8 h-8" />,
-      title: "Trusted Global Partner",
+      title: "Partnerships Built on Trust",
       description:
-        "Long-standing relationships built on trust, consistency, and reliability with importers & distributors worldwide.",
+        "We build lasting relationships with importers & distributors worldwide, founded on consistency, transparency, and mutual respect.",
     },
     {
       icon: <LightBulbIcon className="w-8 h-8" />,
-      title: "Heritage Meets Modern Vision",
+      title: "Tradition Meets Innovation",
       description:
-        "Combining deep Indian agri-trade roots with a forward-looking multinational approach.",
+        "We blend the rich heritage of Indian agriculture with modern, forward-looking processes to deliver unparalleled quality.",
     },
     {
       icon: <CheckCircleIcon className="w-8 h-8" />,
-      title: "Commitment to Excellence",
-      description: "Guided by the promise: 'Every Grain, A Promise Kept.'",
+      title: "Our Promise in Every Grain",
+      description:
+        "Our guiding principle, 'Every Grain, A Promise Kept,' is our commitment to excellence from farm to final destination.",
     },
     {
       icon: <CogIcon className="w-8 h-8" />,
-      title: "Customer-Centric & Flexible",
+      title: "Solutions Tailored for You",
       description:
-        "Tailor-made solutions for different markets, packaging preferences, and cultural needs.",
+        "We offer flexible, customer-focused solutions, adapting our packaging and products to meet diverse cultural and market needs.",
     },
     {
       icon: <TruckIcon className="w-8 h-8" />,
-      title: "Strong Compliance & Supply Chain",
+      title: "Reliable, Compliant Supply Chain",
       description:
-        "Adhering to international food safety standards, ethical sourcing, and seamless logistics.",
+        "Our seamless logistics and strict adherence to international food safety standards ensure your products arrive safely and on time.",
     },
   ];
 

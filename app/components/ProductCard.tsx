@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface ProductCardProps {
@@ -7,6 +8,8 @@ interface ProductCardProps {
   description: string;
   category: string;
   alt?: string;
+  details: string[];
+  href: string;
 }
 
 function ProductCard({
@@ -15,6 +18,8 @@ function ProductCard({
   description,
   category,
   alt,
+  details,
+  href,
 }: ProductCardProps) {
   return (
     <div className="group">
@@ -42,10 +47,33 @@ function ProductCard({
           <p className="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed">
             {description}
           </p>
+          <div className="border-t border-gray-200 my-4"></div>
+          <ul className="space-y-2 mb-6 text-sm text-gray-700">
+            {details.map((detail, index) => (
+              <li key={index} className="flex items-center">
+                <svg
+                  className="w-4 h-4 mr-2 text-secondary"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                {detail}
+              </li>
+            ))}
+          </ul>
           <div className="flex gap-3">
-            <button className="flex-1 bg-primary text-white py-3 px-4 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 text-sm sm:text-base">
-              View Details
-            </button>
+            <Link href={href} className="flex-1">
+              <button className="w-full bg-primary text-white py-3 px-4 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 text-sm sm:text-base">
+                View Details
+              </button>
+            </Link>
             <button className="px-4 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary hover:text-white transition-all duration-300 text-sm sm:text-base">
               <svg
                 className="w-5 h-5"
