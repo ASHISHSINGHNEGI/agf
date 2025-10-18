@@ -2,6 +2,7 @@ import Image from "next/image";
 import Card from "./components/card";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
+import Link from "next/link";
 
 export default function Home() {
   const galleryImages = [
@@ -37,16 +38,18 @@ export default function Home() {
         <div className="absolute inset-0">
           <Gallery galleryImages={galleryImages} />
         </div>
-        <div className="relative z-10 p-4 sm:p-6 md:p-8 text-white">
+        <div className="relative p-4 sm:p-6 md:p-8 text-white">
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 leading-tight">
             Every Grain, A Promise Kept
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 max-w-4xl mx-auto">
             Exporting Trust, Taste & Tradition to 93+ Countries
           </p>
-          <button className="bg-secondary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg text-sm sm:text-base">
-            Explore Our Products
-          </button>
+          <Link href="/pages/products" passHref>
+            <button className="bg-secondary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg text-sm sm:text-base">
+              Explore Our Products
+            </button>
+          </Link>
         </div>
       </section>
 
