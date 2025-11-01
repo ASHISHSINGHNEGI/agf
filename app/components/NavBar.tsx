@@ -16,7 +16,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center text-primary px-4 py-2 relative z-50 ">
+    <header className="w-full flex justify-between items-center text-primary px-4 py-2 sticky top-0 z-50 bg-white shadow-md">
       {/* Logo */}
       <div className="font-bold">
         <Link href="/">

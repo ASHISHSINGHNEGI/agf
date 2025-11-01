@@ -1,5 +1,7 @@
+"use client";
 import ProductCard from "@/app/components/ProductCard";
 import Image from "next/image";
+import { useState } from "react";
 
 const products = [
   {
@@ -53,6 +55,15 @@ const products = [
 ];
 
 export default function ProductsPage() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredProducts =
+    selectedCategory === "All"
+      ? products
+      : products.filter((product) => product.category === selectedCategory);
+
+  const categories = ["All", "Grains", "Sweeteners", "Beverages", "Pulses"];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-amber-50 to-amber-100">
       {/* Hero Section */}
@@ -74,26 +85,24 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto">
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
-            <button className="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300">
-              All Products
-            </button>
-            <button className="px-4 py-2 bg-white text-primary border border-primary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300">
-              Grains
-            </button>
-            <button className="px-4 py-2 bg-white text-primary border border-primary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300">
-              Sweeteners
-            </button>
-            <button className="px-4 py-2 bg-white text-primary border border-primary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300">
-              Beverages
-            </button>
-            <button className="px-4 py-2 bg-white text-primary border border-primary rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-all duration-300">
-              Pulses
-            </button>
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  selectedCategory === category
+                    ? "bg-primary text-white"
+                    : "bg-white text-primary border border-primary hover:bg-primary hover:text-white"
+                }`}
+              >
+                {category === "All" ? "All Products" : category}
+              </button>
+            ))}
           </div>
 
           {/* Products Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
-            {products.map((product, index) => (
+            {filteredProducts.map((product, index) => (
               <ProductCard
                 key={index}
                 name={product.name}

@@ -102,7 +102,7 @@ export default function About() {
       <section className="relative bg-primary text-white py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            "More Than Rice, A Legacy of Trust"
+            More Than Rice, A Legacy of Trust
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto text-gray-200 leading-relaxed">
             At AGF – Anand Global Foods, we are not just exporters, we are

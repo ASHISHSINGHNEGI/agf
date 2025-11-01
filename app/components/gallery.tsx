@@ -38,7 +38,7 @@ const ScrollableGallery = ({
   }, [galleryImages.length, autoScrollInterval]);
 
   return (
-    <div className="relative w-full h-[75vh] overflow-hidden ">
+    <div className="relative w-full h-[75vh] overflow-hidden z-0">
       {galleryImages.map((image, index) => (
         <div
           key={index}
@@ -64,20 +64,6 @@ const ScrollableGallery = ({
       <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       {/* Navigation */}
-      <button
-        onClick={prevImage}
-        className="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full z-20 hover:bg-black/60 transition-all duration-800 ease-in-out hover:scale-150 hover:shadow-lg"
-        aria-label="Previous Image"
-      >
-        <ChevronLeftIcon className="h-6 w-6" />
-      </button>
-      <button
-        onClick={nextImage}
-        className="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full z-20 hover:bg-black/60 transition-all duration-800 ease-in-out hover:scale-150 hover:shadow-lg"
-        aria-label="Next Image"
-      >
-        <ChevronRightIcon className="h-6 w-6" />
-      </button>
 
       {/* Indicator dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">

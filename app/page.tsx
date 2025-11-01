@@ -2,6 +2,7 @@ import Image from "next/image";
 import Card from "./components/card";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
+import Link from "next/link";
 
 export default function Home() {
   const galleryImages = [
@@ -33,28 +34,27 @@ export default function Home() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative text-center flex flex-col-reverse min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] -mx-[2.1%] bg-black/40">
+      <section className="relative text-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] -mx-[2.1%] flex items-center justify-center">
         <div className="absolute inset-0">
           <Gallery galleryImages={galleryImages} />
-          <div className="absolute inset-0"></div>
         </div>
-        <div className="relative z-10 pb-8 sm:pb-16 md:pb-30 pt-4 sm:pt-5 px-4 sm:px-6 md:px-8">
-          <div className="flex flex-col justify-center items-center h-full">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 text-white leading-tight">
-              Every Grain, A Promise Kept
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 text-white max-w-4xl px-4">
-              Exporting Trust. Taste & Tradition to 93+ Countries
-            </p>
-          </div>
-          <button className="bg-secondary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-white hover:bg-orange-600 hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-lg text-sm sm:text-base">
-            Explore Our Products
-          </button>
+        <div className="relative p-4 sm:p-6 md:p-8 text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 leading-tight">
+            Every Grain, A Promise Kept
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 max-w-4xl mx-auto">
+            Exporting Trust, Taste & Tradition to 93+ Countries
+          </p>
+          <Link href="/pages/products" passHref>
+            <button className="bg-secondary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg text-sm sm:text-base">
+              Explore Our Products
+            </button>
+          </Link>
         </div>
       </section>
 
       {/* Highlights */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 text-center">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 text-center mt-8 sm:mt-0">
         <Card
           imgSrc="/earth-globe.svg"
           text="Global Reach, Local Expertise: Delivering to 83+ countries."
