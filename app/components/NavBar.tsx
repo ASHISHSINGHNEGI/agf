@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -16,22 +15,18 @@ export default function NavBar() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center text-primary px-4 py-2 sticky top-0 z-50 bg-white shadow-md">
+    <header className="w-full flex justify-between items-center text-primary px-8 py-2 sticky top-0 z-50 bg-white/30 backdrop-blur-lg border border-white/20 shadow-md rounded-full">
       {/* Logo */}
       <div className="font-bold">
-        <Link href="/">
-          <Image
-            src="/logo/logoWithoutBg.png"
-            alt="AGF Logo"
-            width={120}
-            height={120}
-            className="w-auto h-12 md:h-16"
-          />
+        <Link href="/" className="flex items-baseline gap-1.5">
+          <span className="text-xl md:text-2xl font-black text-primary tracking-tight">
+            Anand Global Foods
+          </span>
         </Link>
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex gap-6 text-primary text-lg font-semibold">
+      <nav className="hidden md:flex gap-6 text-primary text-lg ">
         <Link href="/">
           <span className="hover:bg-secondary hover:text-white px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
             Home
