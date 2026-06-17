@@ -43,7 +43,7 @@ export default function Home() {
             Every Grain, A Promise Kept
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 max-w-4xl mx-auto">
-            Exporting Trust, Taste & Tradition to 93+ Countries
+            Exporting Trust & Tradition To The World
           </p>
           <Link href="/pages/products" passHref>
             <button className="bg-secondary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg text-sm sm:text-base">
