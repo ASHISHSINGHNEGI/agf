@@ -1,8 +1,7 @@
 "use client"; // Required for React hooks (useState, useEffect) in Next.js App Router
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
 
 const ScrollableGallery = ({
   galleryImages,
