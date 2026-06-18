@@ -22,8 +22,8 @@ function ProductCard({
   href,
 }: ProductCardProps) {
   return (
-    <div className="group">
-      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2">
+    <div className="group h-full">
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 h-full flex flex-col">
         {/* Product Image */}
         <div className="relative h-64 sm:h-72 overflow-hidden">
           <Image
@@ -40,11 +40,11 @@ function ProductCard({
         </div>
 
         {/* Product Info */}
-        <div className="p-6">
-          <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
+        <div className="p-6 flex flex-col flex-1">
+          <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2 line-clamp-1">
             {name}
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed">
+          <p className="text-gray-600 text-sm sm:text-base mb-4 leading-relaxed line-clamp-2">
             {description}
           </p>
           <div className="border-t border-gray-200 my-4"></div>
@@ -68,7 +68,7 @@ function ProductCard({
               </li>
             ))}
           </ul>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-auto">
             <Link href={href} className="flex-1">
               <button className="w-full bg-primary text-white py-3 px-4 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 text-sm sm:text-base">
                 View Details

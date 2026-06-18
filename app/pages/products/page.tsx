@@ -1,26 +1,190 @@
 "use client";
 import ProductCard from "@/app/components/ProductCard";
-import Image from "next/image";
 import { useState } from "react";
 
 const products = [
+  // ── Rice ──
   {
-    name: "Basmati Rice",
-    img: "/image/products/rice.jpg",
-    description: "Premium long-grain rice from the foothills of the Himalayas.",
-    category: "Grains",
-    href: "/pages/products/rice",
+    name: "1121 Basmati Rice",
+    img: "/image/products/1121-basmati.jpg",
+    description:
+      "The king of Basmati — extra-long grain with exceptional aroma and elongation up to 22 mm after cooking.",
+    category: "Rice",
+    href: "#",
     details: [
-      "Origin: Punjab, India",
-      "Varieties: 1121 Basmati, Pusa Basmati",
-      "Certifications: ISO 22000, HACCP",
+      "Origin: Punjab & Haryana, India",
+      "Grain Length: 8.30 mm+ (raw)",
+      "Certifications: ISO 22000, HACCP, FSSAI",
     ],
   },
   {
+    name: "1509 Basmati Rice",
+    img: "/image/products/1509-basmati.jpg",
+    description:
+      "A cost-effective premium Basmati with long grains, sweet aroma, and fluffy texture after cooking.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: Punjab, India",
+      "Grain Length: 7.50 mm+ (raw)",
+      "Certifications: ISO 22000, Non-GMO",
+    ],
+  },
+  {
+    name: "1718 Basmati Rice",
+    img: "/image/products/1718-basmati.jpg",
+    description:
+      "A newer Basmati cultivar offering excellent elongation and aroma at a competitive price point.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: Haryana & UP, India",
+      "Grain Length: 7.20 mm+ (raw)",
+      "Certifications: FSSAI, Halal",
+    ],
+  },
+  {
+    name: "Traditional Basmati Rice",
+    img: "/image/products/traditional-basmati.jpg",
+    description:
+      "Heritage Basmati aged for 12–24 months, delivering the finest aroma and delicate, non-sticky grains.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: Himalayan Foothills, India",
+      "Aging: 12–24 months",
+      "Certifications: GI Tagged, ISO 22000",
+    ],
+  },
+  {
+    name: "Sella Basmati Rice",
+    img: "/image/products/sella-rice.jpg",
+    description:
+      "Parboiled Basmati with golden hue, firmer texture and higher nutritional retention — ideal for Biryani.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: Punjab, India",
+      "Type: Parboiled (Golden Sella)",
+      "Certifications: ISO 22000, Kosher",
+    ],
+  },
+  {
+    name: "Steam Basmati Rice",
+    img: "/image/products/steam-rice.jpg",
+    description:
+      "Lightly steamed Basmati rice with a creamy white appearance and softer texture than Sella.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: Punjab & Haryana, India",
+      "Type: Steam Processed",
+      "Certifications: HACCP, Halal",
+    ],
+  },
+  {
+    name: "White Rice",
+    img: "/image/products/white-rice.jpg",
+    description:
+      "Polished non-Basmati white rice, versatile and budget-friendly for everyday consumption worldwide.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: India",
+      "Varieties: IR-64, PR-11",
+      "Certifications: FSSAI, ISO 9001",
+    ],
+  },
+  {
+    name: "Sona Masoori Rice",
+    img: "/image/products/sona-masoori.jpg",
+    description:
+      "Lightweight, aromatic medium-grain rice from South India — low in starch and ideal for daily meals.",
+    category: "Rice",
+    href: "#",
+    details: [
+      "Origin: Andhra Pradesh & Karnataka, India",
+      "Grain Type: Medium-grain",
+      "Certifications: FSSAI, Non-GMO",
+    ],
+  },
+
+  // ── Beverages ──
+  {
+    name: "Black Tea",
+    img: "/image/products/tea.jpg",
+    description:
+      "Full-bodied and aromatic black tea from select plantations in Assam and Darjeeling.",
+    category: "Beverages",
+    href: "#",
+    details: [
+      "Origin: Assam & Darjeeling, India",
+      "Grade: CTC (Crush, Tear, Curl)",
+      "Certifications: Rainforest Alliance, FSSAI",
+    ],
+  },
+  {
+    name: "Coffee",
+    img: "/image/products/coffee.jpg",
+    description:
+      "Single-origin Arabica and Robusta beans from the Western Ghats — rich, bold, and export-ready.",
+    category: "Beverages",
+    href: "#",
+    details: [
+      "Origin: Karnataka & Kerala, India",
+      "Varieties: Arabica, Robusta",
+      "Certifications: ISO 22000, Rainforest Alliance",
+    ],
+  },
+
+  // ── Spices ──
+  {
+    name: "Green Cardamom",
+    img: "/image/products/cardamom.jpg",
+    description:
+      "The 'Queen of Spices' — intensely aromatic green pods handpicked from Kerala plantations.",
+    category: "Spices",
+    href: "#",
+    details: [
+      "Origin: Kerala, India",
+      "Grade: 7 mm+ Bold",
+      "Certifications: Spices Board India, FSSAI",
+    ],
+  },
+  {
+    name: "Whole Spices",
+    img: "/image/products/whole-spices.jpg",
+    description:
+      "A curated range of whole spices — cinnamon, cloves, star anise, cumin, black pepper and more.",
+    category: "Spices",
+    href: "#",
+    details: [
+      "Origin: India (Multi-region)",
+      "Includes: Cumin, Cloves, Cinnamon, Pepper",
+      "Certifications: FSSAI, ISO 22000, Halal",
+    ],
+  },
+  {
+    name: "Ground Spices",
+    img: "/image/products/ground-spices.jpg",
+    description:
+      "Finely milled spice powders — turmeric, chili, coriander and cumin — vibrant in colour and flavour.",
+    category: "Spices",
+    href: "#",
+    details: [
+      "Origin: India",
+      "Includes: Turmeric, Chili, Coriander, Cumin",
+      "Certifications: FSSAI, Halal, ISO 22000",
+    ],
+  },
+
+  // ── Agri Commodities ──
+  {
     name: "Refined Sugar",
     img: "/image/products/sugar.jpg",
-    description: "High-purity crystalline sugar for domestic and industrial use.",
-    category: "Sweeteners",
+    description:
+      "High-purity crystalline sugar for domestic and industrial use, meeting ICUMSA standards.",
+    category: "Agri Commodities",
     href: "#",
     details: [
       "Origin: Brazil & India",
@@ -29,27 +193,42 @@ const products = [
     ],
   },
   {
-    name: "Black Tea",
-    img: "/image/products/tea.jpg",
-    description: "Full-bodied and aromatic black tea from select plantations.",
-    category: "Beverages",
+    name: "Kabuli Chickpeas",
+    img: "/image/products/chickpea.jpg",
+    description:
+      "Large, creamy chickpeas perfect for hummus, salads and a wide variety of global cuisines.",
+    category: "Agri Commodities",
     href: "#",
     details: [
-      "Origin: Assam, India",
-      "Grade: CTC (Crush, Tear, Curl)",
-      "Certifications: Rainforest Alliance",
+      "Origin: Rajasthan & MP, India",
+      "Size: 8–10 mm Caliber",
+      "Certifications: Non-GMO, Vegan, FSSAI",
     ],
   },
   {
-    name: "Kabuli Chickpeas",
-    img: "/image/products/chickpea.jpg",
-    description: "Large, creamy chickpeas, perfect for a variety of cuisines.",
-    category: "Pulses",
+    name: "Peanuts",
+    img: "/image/products/peanuts.jpg",
+    description:
+      "Bold and Java peanuts — crunchy, high-oil-content groundnuts ideal for snacking and oil extraction.",
+    category: "Agri Commodities",
     href: "#",
     details: [
-      "Origin: India",
-      "Size: 8-10mm Caliber",
-      "Certifications: Non-GMO, Vegan",
+      "Origin: Gujarat & Rajasthan, India",
+      "Varieties: Bold (38/42), Java (50/60)",
+      "Certifications: FSSAI, Non-GMO, Halal",
+    ],
+  },
+  {
+    name: "Sesame Seeds",
+    img: "/image/products/sesame-seeds.jpg",
+    description:
+      "Premium hulled and natural sesame seeds — rich in nutrients and prized for oil, tahini and confectionery.",
+    category: "Agri Commodities",
+    href: "#",
+    details: [
+      "Origin: Rajasthan & Gujarat, India",
+      "Varieties: White, Black, Brown",
+      "Certifications: FSSAI, ISO 22000, Kosher",
     ],
   },
 ];
@@ -62,7 +241,14 @@ export default function ProductsPage() {
       ? products
       : products.filter((product) => product.category === selectedCategory);
 
-  const categories = ["All", "Grains", "Sweeteners", "Beverages", "Pulses"];
+  const categories = [
+    "All",
+    "Rice",
+    "Beverages",
+    "Spices",
+    "Agri Commodities",
+  ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-amber-50 to-amber-100">

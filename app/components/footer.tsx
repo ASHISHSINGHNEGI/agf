@@ -109,6 +109,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/pages/certifications"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Certifications
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pages/contact"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
