@@ -32,7 +32,7 @@ export default function Home() {
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 text-center mt-8 sm:mt-0">
         <Card
           imgSrc="/earth-globe.svg"
-          text="Global Reach, Local Expertise: Delivering to 83+ countries."
+          text="Global Reach, Local Expertise: Delivering to 100+ countries."
         />
         <Card
           text="A Legacy of 14+ Years: Cultivating and exporting excellence."
