@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative text-center min-h-[60vh] sm:min-h-[70vh] md:min-h-[75vh] -mx-[2.1%] flex items-center justify-center">
+      <section className="relative text-center min-h-[calc(100svh-60px)] -mx-[2.1%] flex items-center justify-center">
         <div className="absolute inset-0">
           <Gallery galleryImages={galleryImages} />
         </div>
