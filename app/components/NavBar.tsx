@@ -52,6 +52,11 @@ export default function NavBar() {
             Certifications
           </span>
         </Link>
+        <Link href="/pages/privateLabel">
+          <span className="hover:text-primary px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+            Private Label
+          </span>
+        </Link>
         <Link href="/pages/contact">
           <span className="hover:text-primary  px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
             Contact Us
@@ -111,6 +116,11 @@ export default function NavBar() {
           <Link href="/pages/certifications" onClick={closeMenu}>
             <span className="block px-4 py-3 text-primary hover:text-primary hover:font-bold transition-all duration-300 ease-in-out">
               Certifications
+            </span>
+          </Link>
+          <Link href="/pages/privateLabel" onClick={closeMenu}>
+            <span className="block px-4 py-3 text-primary hover:text-primary hover:font-bold transition-all duration-300 ease-in-out">
+              Private Label
             </span>
           </Link>
           <Link href="/pages/contact" onClick={closeMenu}>

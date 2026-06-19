@@ -34,7 +34,19 @@ const ScrollableGallery = ({
 
     // Clean up the interval on component unmount
     return () => clearInterval(timer);
-  }, [galleryImages.length, autoScrollInterval]);
+  }, [galleryImages.length, autoScrollInterval, currentIndex]);
+
+  // Get the indices for the 5 thumbnails (2 previous, current, 2 next)
+  const getThumbnailIndices = () => {
+    const total = galleryImages.length;
+    if (total <= 5) return Array.from({ length: total }, (_, i) => i);
+    
+    return [-2, -1, 0, 1, 2].map((offset) => {
+      let index = (currentIndex + offset) % total;
+      if (index < 0) index += total;
+      return index;
+    });
+  };
 
   return (
     <div className="relative w-full h-[calc(100svh-60px)] overflow-hidden z-0">
@@ -64,20 +76,47 @@ const ScrollableGallery = ({
 
       {/* Navigation */}
 
-      {/* Indicator dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-        {galleryImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`h-2 w-2 rounded-full transition-all duration-300 ease-in-out hover:scale-125 ${
-              index === currentIndex
-                ? "bg-white scale-125 shadow-lg"
-                : "bg-white/50 hover:bg-white/70"
-            }`}
-            aria-label={`Go to image ${index + 1}`}
-          />
-        ))}
+      {/* Thumbnails in bottom right corner */}
+      <div className="absolute bottom-6 right-6 flex items-center justify-end gap-2 sm:gap-3 z-20 max-w-[90vw]">
+        {getThumbnailIndices().map((index) => {
+          const image = galleryImages[index];
+          const isActive = index === currentIndex;
+          
+          return (
+            <button
+              key={`thumb-${index}`}
+              onClick={() => setCurrentIndex(index)}
+              className={`relative flex-shrink-0 transition-all duration-500 ease-in-out rounded-lg overflow-hidden border-2 ${
+                isActive
+                  ? "w-24 h-16 sm:w-32 sm:h-24 border-secondary scale-105 shadow-xl shadow-black/50 opacity-100 z-10"
+                  : "w-16 h-10 sm:w-20 sm:h-14 border-white/30 opacity-60 hover:opacity-100 hover:border-white/80"
+              }`}
+              aria-label={`Go to image ${index + 1}`}
+            >
+              <Image
+                src={image.src}
+                alt={`Thumbnail for ${image.alt}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100px, 150px"
+              />
+              
+              {/* Decreasing progress line for active thumbnail */}
+              {isActive && (
+                <div 
+                  key={`progress-${currentIndex}`}
+                  className="absolute bottom-0 left-0 h-1.5 bg-secondary z-20 animate-shrink origin-left"
+                  style={{ animationDuration: `${autoScrollInterval}ms` }}
+                />
+              )}
+
+              {/* Dark overlay for inactive thumbnails */}
+              {!isActive && (
+                <div className="absolute inset-0 bg-black/40 hover:bg-transparent transition-colors duration-300 z-10"></div>
+              )}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

@@ -25,9 +25,8 @@ export default function Footer() {
               food brands. Anand Global Foods is a leading agri-export company
               that specializes in exporting a wide range of products to
               international markets. With a strong commitment to quality and
-              customer satisfaction, we have established ourselves as a
-              trusted partner for businesses looking to expand their reach
-              globally.
+              customer satisfaction, we have established ourselves as a trusted
+              partner for businesses looking to expand their reach globally.
             </p>
             <div className="flex space-x-4">
               {/* <a
@@ -113,6 +112,14 @@ export default function Footer() {
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Certifications
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/pages/privateLabel"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Private Label
                 </Link>
               </li>
               <li>
@@ -223,9 +230,9 @@ export default function Footer() {
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
                 <p className="text-gray-300 text-sm">
-                  +1 (555) 123-4567
+                  +91 99889 43538
                   <br />
-                  +1 (555) 987-6543
+                  +971 56 195 0524
                 </p>
               </div>
             </div>
@@ -260,7 +267,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2025 AGF. All rights reserved.
+              © 2026 AGF. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link

@@ -16,7 +16,7 @@ export default function FeatureCard({
       <div className="w-full h-64 sm:h-72 mb-4 relative overflow-hidden rounded-lg">
         <Image
           src={imgSrc}
-          alt={alt || ""}
+          alt={alt || cardName || text || "Feature image"}
           fill
           className="rounded-lg object-cover transition-all duration-300 ease-in-out group-hover:scale-110"
         />

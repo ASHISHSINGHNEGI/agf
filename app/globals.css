@@ -44,3 +44,22 @@ body {
     color: var(--foreground);
     font-family: var(--font-poppins), "Poppins", sans-serif;
 }
+
+/* Utilities */
+@layer utilities {
+    .hide-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+    }
+    
+    @keyframes shrink {
+        from { width: 100%; }
+        to { width: 0%; }
+    }
+    .animate-shrink {
+        animation: shrink linear forwards;
+    }
+}

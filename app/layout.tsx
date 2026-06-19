@@ -11,8 +11,13 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Anand Global Foods",
-  description: "Anand Global Foods",
+  title: {
+    template: "%s | Anand Global Foods",
+    default: "Anand Global Foods | Premium Agri-Export Company",
+  },
+  description:
+    "Anand Global Foods is a leading agri-export company with 14+ years of global experience, exporting premium Basmati Rice, Sugar, Tea, Coffee, and Spices to 100+ countries.",
+  keywords: ["Agri Export", "Basmati Rice", "Refined Sugar", "Indian Spices", "Private Label Packaging", "Anand Global Foods", "Food Exporters"],
 };
 
 export default function RootLayout({
