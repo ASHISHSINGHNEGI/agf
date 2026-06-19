@@ -355,6 +355,170 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* How We Work */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary -mx-[2.1%] relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-white/5 rounded-full -translate-y-1/2" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-white/5 rounded-full translate-y-1/2" />
+        <div className="absolute top-1/2 right-0 w-40 h-40 bg-secondary/10 rounded-full translate-x-1/2 -translate-y-1/2" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="inline-block bg-secondary/20 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">
+              Our Process
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5">
+              How We Work
+            </h2>
+            <p className="text-gray-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+              A transparent, structured process that takes you from initial
+              enquiry to delivered cargo — with support at every step.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            {/* Step 1 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center shadow-lg shadow-secondary/20">
+                  <span className="text-white font-bold text-sm">01</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Requirement Discussion
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                We listen first — understanding your target market, product specifications, packaging needs, and volume requirements.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
+                  <span className="text-primary font-bold text-sm">02</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Product Recommendation
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Our experts recommend the best-fit products, grades, and varieties based on your market demand and budget.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center shadow-lg shadow-secondary/20">
+                  <span className="text-white font-bold text-sm">03</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Sampling &amp; Approval
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Physical samples are dispatched for your evaluation. We refine until quality and specifications are fully approved.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
+                  <span className="text-primary font-bold text-sm">04</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Commercial Finalization
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Pricing, payment terms, delivery timeline, and contract details are finalized with full transparency.
+              </p>
+            </div>
+
+            {/* Step 5 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center shadow-lg shadow-secondary/20">
+                  <span className="text-white font-bold text-sm">05</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Production &amp; Packing
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Your order enters production — milling, sortex processing, grading, and packaging to your exact specifications.
+              </p>
+            </div>
+
+            {/* Step 6 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
+                  <span className="text-primary font-bold text-sm">06</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Quality Inspection
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Pre-shipment quality inspection with lab testing, weight verification, and packaging integrity checks.
+              </p>
+            </div>
+
+            {/* Step 7 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center shadow-lg shadow-secondary/20">
+                  <span className="text-white font-bold text-sm">07</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Shipment
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Container loading under supervision, complete export documentation, and real-time shipment tracking until delivery.
+              </p>
+            </div>
+
+            {/* Step 8 */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
+                  <span className="text-primary font-bold text-sm">08</span>
+                </div>
+                <div className="h-px flex-1 bg-white/15" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Post-Sales Support
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Our relationship doesn't end at delivery — ongoing support for reorders, feedback, and market-specific adjustments.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/pages/contact">
+              <span className="inline-flex items-center gap-2 bg-white text-primary px-7 py-3 rounded-full font-semibold hover:bg-secondary hover:text-white transition-all duration-300 text-base shadow-lg hover:shadow-xl hover:scale-105">
+                Start Your Journey
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
