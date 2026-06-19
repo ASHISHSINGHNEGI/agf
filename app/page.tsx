@@ -48,80 +48,151 @@ export default function Home() {
         />
       </section>
 
-      {/* Why Choose AGF */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50 -mx-[2.1%]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10 sm:mb-14">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
-              Why Choose AGF?
+      {/* Why Buyers Choose AGF */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary -mx-[2.1%] relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/3" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="inline-block bg-secondary/20 text-secondary text-sm font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">
+              Our Strengths
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5">
+              Why Buyers Choose AGF
             </h2>
-            <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
-              Trusted by importers &amp; distributors across 93+ countries for
-              quality, reliability, and consistency.
+            <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+              Trusted by importers &amp; distributors across 93+ countries — here's what sets us apart.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group text-center">
-              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-                </svg>
-              </div>
-              <h3 className="text-lg font-semibold text-primary mb-2">
-                Certified Quality
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                ISO, HACCP, BRC, FDA, FSSAI, Halal &amp; Kosher certified — meeting the strictest global standards.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group text-center">
-              <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+            {/* Global Export Experience */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-secondary/20">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-primary mb-2">
-                Global Supply Chain
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Global Export Experience
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Seamless logistics to 93+ countries with on-time delivery and complete supply chain traceability.
+              <p className="text-gray-300 text-sm leading-relaxed">
+                14+ years of hands-on expertise exporting premium agri-products to 93+ countries across every continent.
               </p>
             </div>
 
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group text-center">
-              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+            {/* Reliable Supply Chain */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-primary mb-2">
-                14+ Years Expertise
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Reliable Supply Chain
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Industry veterans with deep knowledge in global agri-trade, building lasting partnerships.
+              <p className="text-gray-300 text-sm leading-relaxed">
+                End-to-end supply chain management with full traceability from farm to port, ensuring zero disruptions.
               </p>
             </div>
 
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group text-center">
-              <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-7 h-7 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11.42 15.17l-5.1-3.13M16.58 15.17l5.1-3.13M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 6a6 6 0 100 12 6 6 0 000-12z" />
+            {/* Consistent Quality Standards */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-secondary/20">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-primary mb-2">
-                Custom Solutions
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Consistent Quality Standards
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Flexible packaging, private labelling, and tailored solutions to match your market needs.
+              <p className="text-gray-300 text-sm leading-relaxed">
+                ISO, HACCP, BRC, FDA, Halal &amp; Kosher certified — every shipment meets the same exacting standards.
+              </p>
+            </div>
+
+            {/* Competitive Pricing */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Competitive Pricing
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Direct sourcing from farmers and optimised operations mean premium quality at the most competitive prices.
+              </p>
+            </div>
+
+            {/* Private Label Expertise */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M6 6h.008v.008H6V6z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Private Label Expertise
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Custom branding, packaging design, and private-label services tailored for your market identity.
+              </p>
+            </div>
+
+            {/* Professional Documentation */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-secondary/20">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Documentation Support
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Complete export documentation — phytosanitary certificates, bills of lading, COA, and customs compliance.
+              </p>
+            </div>
+
+            {/* Timely Shipment */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-secondary/20">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Timely Shipment Execution
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Punctual dispatch with real-time tracking — because in global trade, every day counts.
+              </p>
+            </div>
+
+            {/* Long-Term Relationships */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-6 sm:p-7 rounded-2xl hover:bg-white/15 transition-all duration-300 hover:-translate-y-1 group">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Long-Term Relationships
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                We don't just close deals — we build partnerships founded on trust, transparency, and mutual growth.
               </p>
             </div>
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <Link href="/pages/about">
-              <span className="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition-colors duration-300 text-base sm:text-lg">
+              <span className="inline-flex items-center gap-2 bg-white text-primary px-7 py-3 rounded-full font-semibold hover:bg-secondary hover:text-white transition-all duration-300 text-base shadow-lg hover:shadow-xl hover:scale-105">
                 Learn more about AGF
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
