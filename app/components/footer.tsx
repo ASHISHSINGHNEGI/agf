@@ -25,9 +25,8 @@ export default function Footer() {
               food brands. Anand Global Foods is a leading agri-export company
               that specializes in exporting a wide range of products to
               international markets. With a strong commitment to quality and
-              customer satisfaction, we have established ourselves as a
-              trusted partner for businesses looking to expand their reach
-              globally.
+              customer satisfaction, we have established ourselves as a trusted
+              partner for businesses looking to expand their reach globally.
             </p>
             <div className="flex space-x-4">
               {/* <a
@@ -268,7 +267,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2025 AGF. All rights reserved.
+              © 2026 AGF. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link
