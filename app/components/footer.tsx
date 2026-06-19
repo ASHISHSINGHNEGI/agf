@@ -117,6 +117,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/pages/privateLabel"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                >
+                  Private Label
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pages/contact"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >

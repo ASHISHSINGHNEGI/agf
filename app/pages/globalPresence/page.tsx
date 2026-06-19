@@ -40,10 +40,13 @@ export default function GlobalPresence() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 sm:mb-6">
             Global Presence
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto leading-relaxed">
             Our agricultural excellence reaches across continents, serving
             customers in over 100 countries with premium quality products and
             reliable service.
+          </p>
+          <p className="text-base sm:text-lg text-secondary font-semibold mb-8">
+            Serving customers across Asia, Africa, Europe, Americas and Oceania.
           </p>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
