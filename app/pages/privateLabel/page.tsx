@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Private Label & Contract Packaging",
+  description: "End-to-end private label and contract packaging solutions for premium agri-products. We offer custom branding, design support, and market-specific retail packaging.",
+};
 import Link from "next/link";
 import {
   SparklesIcon,

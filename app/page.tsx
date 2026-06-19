@@ -3,8 +3,13 @@ import Card from "./components/card";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
 import Link from "next/link";
+import type { Metadata } from "next";
 import galleryImages from "./assets/gallaryImage.json";
 
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Anand Global Foods exports premium Basmati Rice, Sugar, Spices, and Agri-Commodities to 93+ countries. Partner with us for trusted quality.",
+};
 export default function Home() {
   return (
     <div className="font-sans">

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with Anand Global Foods. Submit your Request for Quote (RFQ) for premium agri-products, or contact our global headquarters in India or our UAE office.",
+};
 
 export default function Contact() {
   return (

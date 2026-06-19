@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Global Presence",
+  description: "Anand Global Foods exports premium agri-commodities to over 100 countries across Asia, Africa, Europe, Americas, and Oceania.",
+};
 const data = [
   {
     name: "Africa",
