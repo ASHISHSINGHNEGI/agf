@@ -29,7 +29,7 @@ export default function About() {
       icon: <GlobeAltIcon className="w-8 h-8" />,
       title: "Our Fields, The World's Tables",
       description:
-        "We have a robust network that supplies premium agricultural products to over 90 countries, ensuring timely delivery across continents.",
+        "We have a robust network that supplies premium agricultural products to over 100 countries, ensuring timely delivery across continents.",
     },
     {
       icon: <ShieldCheckIcon className="w-8 h-8" />,
@@ -138,7 +138,7 @@ export default function About() {
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
                 With over 14 years of experience in global agri-export
                 leadership, we have successfully scaled our operations to serve
-                90+ countries across multiple continents, building long-standing
+                100+ countries across multiple continents, building long-standing
                 relationships based on trust, consistency, and reliability.
               </p>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
@@ -159,7 +159,7 @@ export default function About() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-secondary text-white p-4 rounded-xl shadow-lg">
-                <p className="text-sm font-semibold">90+ Countries</p>
+                <p className="text-sm font-semibold">100+ Countries</p>
                 <p className="text-xs">Global Reach</p>
               </div>
             </div>

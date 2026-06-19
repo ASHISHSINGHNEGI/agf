@@ -3,12 +3,13 @@ import Card from "./components/card";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
 import Link from "next/link";
+import { GlobeAltIcon, TrophyIcon, ShieldCheckIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import type { Metadata } from "next";
 import galleryImages from "./assets/gallaryImage.json";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Anand Global Foods exports premium Basmati Rice, Sugar, Spices, and Agri-Commodities to 93+ countries. Partner with us for trusted quality.",
+  description: "Anand Global Foods exports premium Basmati Rice, Sugar, Spices, and Agri-Commodities to 100+ countries. Partner with us for trusted quality.",
 };
 export default function Home() {
   return (
@@ -34,23 +35,37 @@ export default function Home() {
       </section>
 
       {/* Highlights */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 text-center mt-8 sm:mt-0">
-        <Card
-          imgSrc="/earth-globe.svg"
-          text="Global Reach, Local Expertise: Delivering to 100+ countries."
-        />
-        <Card
-          text="A Legacy of 14+ Years: Cultivating and exporting excellence."
-          imgSrc="/sun.svg"
-        />
-        <Card
-          text="Quality You Can Trace: Certified for purity from soil to ship."
-          imgSrc="/quality.svg"
-        />
-        <Card
-          text="The Partner of Choice: Building trust with global distributors."
-          imgSrc="/handshake.svg"
-        />
+      <section className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group border border-gray-100">
+            <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary transition-colors duration-300">
+              <GlobeAltIcon className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <h3 className="text-xl font-bold text-primary mb-2">Global Reach</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">Delivering to 100+ countries with deep local expertise.</p>
+          </div>
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group border border-gray-100">
+            <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300">
+              <TrophyIcon className="w-7 h-7 text-secondary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <h3 className="text-xl font-bold text-primary mb-2">14+ Years Legacy</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">Cultivating and exporting excellence since day one.</p>
+          </div>
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group border border-gray-100">
+            <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary transition-colors duration-300">
+              <ShieldCheckIcon className="w-7 h-7 text-primary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <h3 className="text-xl font-bold text-primary mb-2">Certified Quality</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">100% traceable purity from the soil to the ship.</p>
+          </div>
+          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group border border-gray-100">
+            <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300">
+              <UserGroupIcon className="w-7 h-7 text-secondary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <h3 className="text-xl font-bold text-primary mb-2">Partner of Choice</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">Building trust with global distributors worldwide.</p>
+          </div>
+        </div>
       </section>
 
       {/* Why Buyers Choose AGF */}
@@ -68,7 +83,7 @@ export default function Home() {
               Why Buyers Choose AGF
             </h2>
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Trusted by importers &amp; distributors across 93+ countries — here's what sets us apart.
+              Trusted by importers &amp; distributors across 100+ countries — here's what sets us apart.
             </p>
           </div>
 
@@ -84,7 +99,7 @@ export default function Home() {
                 Global Export Experience
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                14+ years of hands-on expertise exporting premium agri-products to 93+ countries across every continent.
+                14+ years of hands-on expertise exporting premium agri-products to 100+ countries across every continent.
               </p>
             </div>
 

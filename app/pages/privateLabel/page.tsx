@@ -188,7 +188,7 @@ export default function PrivateLabelPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "500+", label: "Private Labels Delivered" },
-              { value: "93+", label: "Countries Served" },
+              { value: "100+", label: "Countries Served" },
               { value: "100%", label: "Customisation" },
               { value: "MOQ", label: "Flexible Minimums" },
             ].map((stat, index) => (
