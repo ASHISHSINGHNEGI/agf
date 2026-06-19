@@ -195,8 +195,8 @@ export default function Contact() {
                     <div>
                       <h4 className="text-lg font-semibold mb-2">Call Us</h4>
                       <p className="text-gray-300 text-sm leading-relaxed">
-                        +91 (0) 123 456 7890<br />
-                        +971 50 123 4567
+                        +91 99889 43538 (India)<br />
+                        +971 56 195 0524 (UAE)
                       </p>
                     </div>
                   </div>
