@@ -99,7 +99,7 @@ export default function GlobalPresence() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-2">14+</h3>
+              <h3 className="text-2xl font-bold text-primary mb-2">15+</h3>
               <p className="text-gray-600">Years of Excellence</p>
             </div>
 

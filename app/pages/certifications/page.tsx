@@ -165,7 +165,7 @@ const trustStats = [
   { value: "9+", label: "Certifications" },
   { value: "100+", label: "Countries Served" },
   { value: "100%", label: "Traceability" },
-  { value: "14+", label: "Years of Trust" },
+  { value: "15+", label: "Years of Trust" },
 ];
 
 export default function CertificationsPage() {

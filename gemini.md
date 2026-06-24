@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Anand Global Foods (AGF)** is a corporate website for a leading agri-export company with 14+ years of global experience. The company exports food products (Basmati Rice varieties, Sugar, Tea, Coffee, Spices, Chickpeas, Peanuts, Sesame Seeds) to 93+ countries worldwide. The website serves as a marketing and informational platform for international distributors and buyers.
+**Anand Global Foods (AGF)** is a corporate website for a leading agri-export company with 15+ years of global experience. The company exports food products (Basmati Rice varieties, Sugar, Tea, Coffee, Spices, Chickpeas, Peanuts, Sesame Seeds) to 93+ countries worldwide. The website serves as a marketing and informational platform for international distributors and buyers.
 
 - **App name in package.json**: `agf_website`
 - **Primary colour**: Deep green (`#0d4a27`) — brand primary
@@ -89,14 +89,14 @@ Footer background: `bg-primary` (dark green).
 
 ## Pages & Routes
 
-| Route                      | File                             | Description                                                              |
-| -------------------------- | -------------------------------- | ------------------------------------------------------------------------ |
-| `/`                        | `app/page.tsx`                   | Home — Hero gallery, 4 highlight cards, Why Choose AGF, Featured Products |
-| `/pages/about`             | `app/pages/about/page.tsx`       | Company history, mission/vision, key highlights, core values             |
-| `/pages/products`          | `app/pages/products/page.tsx`    | Full product catalogue (18 products, 4 categories with filter)           |
-| `/pages/certifications`    | `app/pages/certifications/page.tsx` | 9 certifications showcase (ISO, HACCP, BRC, FDA, APEDA, FSSAI, Halal, Kosher, Organic) |
-| `/pages/globalPresence`    | `app/pages/globalPresence/`      | Export map, countries served                                             |
-| `/pages/contact`           | `app/pages/contact/`             | Contact form and company info                                            |
+| Route                   | File                                | Description                                                                            |
+| ----------------------- | ----------------------------------- | -------------------------------------------------------------------------------------- |
+| `/`                     | `app/page.tsx`                      | Home — Hero gallery, 4 highlight cards, Why Choose AGF, Featured Products              |
+| `/pages/about`          | `app/pages/about/page.tsx`          | Company history, mission/vision, key highlights, core values                           |
+| `/pages/products`       | `app/pages/products/page.tsx`       | Full product catalogue (18 products, 4 categories with filter)                         |
+| `/pages/certifications` | `app/pages/certifications/page.tsx` | 9 certifications showcase (ISO, HACCP, BRC, FDA, APEDA, FSSAI, Halal, Kosher, Organic) |
+| `/pages/globalPresence` | `app/pages/globalPresence/`         | Export map, countries served                                                           |
+| `/pages/contact`        | `app/pages/contact/`                | Contact form and company info                                                          |
 
 > **Note**: Pages live under `app/pages/` (a custom folder), **not** the Next.js 13 `pages/` router. All routing uses the Next.js App Router.
 
@@ -151,12 +151,12 @@ Footer background: `bg-primary` (dark green).
 
 The products page (`app/pages/products/page.tsx`) contains 18 products across 4 filterable categories:
 
-| Category            | Products                                                                                               |
-| ------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Rice** (8)        | 1121 Basmati, 1509 Basmati, 1718 Basmati, Traditional Basmati, Sella Basmati, Steam Basmati, White Rice, Sona Masoori |
-| **Beverages** (2)   | Black Tea, Coffee                                                                                      |
-| **Spices** (3)      | Green Cardamom, Whole Spices, Ground Spices                                                            |
-| **Agri Commodities** (4) | Refined Sugar, Kabuli Chickpeas, Peanuts, Sesame Seeds                                           |
+| Category                 | Products                                                                                                              |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Rice** (8)             | 1121 Basmati, 1509 Basmati, 1718 Basmati, Traditional Basmati, Sella Basmati, Steam Basmati, White Rice, Sona Masoori |
+| **Beverages** (2)        | Black Tea, Coffee                                                                                                     |
+| **Spices** (3)           | Green Cardamom, Whole Spices, Ground Spices                                                                           |
+| **Agri Commodities** (4) | Refined Sugar, Kabuli Chickpeas, Peanuts, Sesame Seeds                                                                |
 
 Each product includes: `name`, `img`, `description`, `category`, `href`, `details[]` (origin, spec, certifications).
 
@@ -166,17 +166,17 @@ Each product includes: `name`, `img`, `description`, `category`, `href`, `detail
 
 The certifications page (`app/pages/certifications/page.tsx`) showcases 9 certifications:
 
-| Certification | Full Name                                            | Visual     |
-| ------------- | ---------------------------------------------------- | ---------- |
-| ISO 22000     | Food Safety Management System                        | Image      |
-| HACCP         | Hazard Analysis & Critical Control Points            | Image      |
-| BRC           | British Retail Consortium Global Standard            | Image      |
-| FDA           | U.S. Food & Drug Administration                      | Icon       |
-| APEDA         | Agricultural & Processed Food Products Export Dev Authority | Icon |
-| FSSAI         | Food Safety & Standards Authority of India           | Icon       |
-| Halal         | Halal Certification                                  | Icon       |
-| Kosher        | Kosher Certification                                 | Icon       |
-| Organic       | Organic Certifications (NPOP / USDA / EU Organic)    | Icon       |
+| Certification | Full Name                                                   | Visual |
+| ------------- | ----------------------------------------------------------- | ------ |
+| ISO 22000     | Food Safety Management System                               | Image  |
+| HACCP         | Hazard Analysis & Critical Control Points                   | Image  |
+| BRC           | British Retail Consortium Global Standard                   | Image  |
+| FDA           | U.S. Food & Drug Administration                             | Icon   |
+| APEDA         | Agricultural & Processed Food Products Export Dev Authority | Icon   |
+| FSSAI         | Food Safety & Standards Authority of India                  | Icon   |
+| Halal         | Halal Certification                                         | Icon   |
+| Kosher        | Kosher Certification                                        | Icon   |
+| Organic       | Organic Certifications (NPOP / USDA / EU Organic)           | Icon   |
 
 Each certification has: `name`, `fullName`, `description`, `scope[]`, colour theme, and either an image or Heroicon.
 
@@ -187,8 +187,8 @@ Each certification has: `name`, `fullName`, `description`, `scope[]`, colour the
 The home page (`app/page.tsx`) contains the following sections in order:
 
 1. **Hero Section** — Full-viewport gallery slideshow with tagline "Every Grain, A Promise Kept" and "Explore Our Products" CTA
-2. **Highlights** — 4 stat cards (Global Reach, 14+ Years, Quality, Partner of Choice)
-3. **Why Choose AGF** — 4 cards (Certified Quality, Global Supply Chain, 14+ Years Expertise, Custom Solutions) with "Learn more about AGF →" link to About page
+2. **Highlights** — 4 stat cards (Global Reach, 15+ Years, Quality, Partner of Choice)
+3. **Why Choose AGF** — 4 cards (Certified Quality, Global Supply Chain, 15+ Years Expertise, Custom Solutions) with "Learn more about AGF →" link to About page
 4. **Featured Products** — 4 product thumbnails (Basmati Rice, Sugar, Tea, Chickpeas)
 
 ---

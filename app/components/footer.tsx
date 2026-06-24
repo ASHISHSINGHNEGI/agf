@@ -20,7 +20,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Backed by 14+ Years of Global Agri-Export Leadership – Founded by
+              Backed by 15+ Years of Global Agri-Export Leadership – Founded by
               industry veterans with proven expertise in building global FMCG &
               food brands. Anand Global Foods is a leading agri-export company
               that specializes in exporting a wide range of products to

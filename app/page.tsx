@@ -48,7 +48,7 @@ export default function Home() {
             <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300">
               <TrophyIcon className="w-7 h-7 text-secondary group-hover:text-white transition-colors duration-300" />
             </div>
-            <h3 className="text-xl font-bold text-primary mb-2">14+ Years Legacy</h3>
+            <h3 className="text-xl font-bold text-primary mb-2">15+ Years Legacy</h3>
             <p className="text-gray-600 text-sm leading-relaxed">Cultivating and exporting excellence since day one.</p>
           </div>
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group border border-gray-100">
@@ -99,7 +99,7 @@ export default function Home() {
                 Global Export Experience
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                14+ years of hands-on expertise exporting premium agri-products to 100+ countries across every continent.
+                15+ years of hands-on expertise exporting premium agri-products to 100+ countries across every continent.
               </p>
             </div>
 

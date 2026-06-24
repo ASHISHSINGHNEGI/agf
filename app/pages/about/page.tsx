@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Anand Global Foods, our 14+ years legacy, mission, vision, and the core values that drive our agri-export excellence worldwide.",
+  description: "Learn about Anand Global Foods, our 15+ years legacy, mission, vision, and the core values that drive our agri-export excellence worldwide.",
 };
 import {
   CheckCircleIcon,
