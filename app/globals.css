@@ -26,8 +26,6 @@
 @layer base {
     body {
         color: var(--color-primary);
-        padding-left: var(--horizontal-padding);
-        padding-right: var(--horizontal-padding);
         font-family: var(--font-poppins), "Poppins", sans-serif;
     }
 }

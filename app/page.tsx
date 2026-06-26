@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Card from "./components/card";
+import { GlobeAltIcon, ShieldCheckIcon, TrophyIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import type { Metadata } from "next";
+import Link from "next/link";
+import galleryImages from "./assets/gallaryImage.json";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
-import Link from "next/link";
-import { GlobeAltIcon, TrophyIcon, ShieldCheckIcon, UserGroupIcon } from "@heroicons/react/24/outline";
-import type { Metadata } from "next";
-import galleryImages from "./assets/gallaryImage.json";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -224,15 +222,17 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="p-4 sm:p-6 md:p-10 text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-6 sm:mb-8">
-          Featured Products
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.jpg" />
-          <FeatureCard text="Sugar" imgSrc="/image/products/sugar.jpg" />
-          <FeatureCard text="Tea" imgSrc="/image/products/tea.jpg" />
-          <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.jpg" />
+      <section className="py-12 sm:py-16 lg:py-20 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-6 sm:mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.jpg" />
+            <FeatureCard text="Sugar" imgSrc="/image/products/sugar.jpg" />
+            <FeatureCard text="Tea" imgSrc="/image/products/tea.jpg" />
+            <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.jpg" />
+          </div>
         </div>
       </section>
 

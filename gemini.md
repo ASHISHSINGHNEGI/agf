@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Anand Global Foods (AGF)** is a corporate website for a leading agri-export company with 15+ years of global experience. The company exports food products (Basmati Rice varieties, Sugar, Tea, Coffee, Spices, Chickpeas, Peanuts, Sesame Seeds) to 93+ countries worldwide. The website serves as a marketing and informational platform for international distributors and buyers.
+**Anand Global Foods (AGF)** is a corporate website for a leading agri-export company with 15+ years of global experience. The company exports food products (Basmati Rice varieties, Sugar, Tea, Coffee, Spices, Chickpeas, Peanuts, Sesame Seeds) to 100+ countries worldwide. The website serves as a marketing and informational platform for international distributors and buyers.
 
 - **App name in package.json**: `agf_website`
 - **Primary colour**: Deep green (`#0d4a27`) — brand primary

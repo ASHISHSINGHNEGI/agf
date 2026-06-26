@@ -15,50 +15,51 @@ export default function NavBar() {
   };
 
   return (
-    <header className="w-full flex justify-between items-center text-primary px-8 py-2 sticky top-0 z-50 bg-white/30 backdrop-blur-lg border border-white/20 shadow-md rounded-full">
+    <header className="w-full sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200/60 shadow-sm">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full flex justify-between items-center py-3">
       {/* Logo */}
       <div>
         <Link href="/" className="flex items-baseline gap-1.5">
-          <span className="text-xl md:text-2xl font-black text-primary tracking-tight">
+          <span className="text-[20px] font-black text-primary tracking-tight">
             Anand Global Foods
           </span>
         </Link>
       </div>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex gap-6 text-black text-lg ">
+      <nav className="hidden md:flex gap-1 text-black">
         <Link href="/">
-          <span className="hover:text-primary  px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Home
           </span>
         </Link>
         <Link href="/pages/about">
-          <span className="hover:text-primary px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             About
           </span>
         </Link>
         <Link href="/pages/products">
-          <span className="hover:text-primary  px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Products
           </span>
         </Link>
         <Link href="/pages/globalPresence">
-          <span className="hover:text-primary  px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Global Presence
           </span>
         </Link>
         <Link href="/pages/certifications">
-          <span className="hover:text-primary px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Certifications
           </span>
         </Link>
         <Link href="/pages/privateLabel">
-          <span className="hover:text-primary px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Private Label
           </span>
         </Link>
         <Link href="/pages/contact">
-          <span className="hover:text-primary  px-2 py-1 rounded-md transition-all duration-300 ease-in-out">
+          <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Contact Us
           </span>
         </Link>
@@ -66,7 +67,7 @@ export default function NavBar() {
 
       {/* Desktop CTA */}
       <Link href="/pages/contact" className="hidden md:block">
-        <span className="bg-secondary text-white px-5 py-2 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 transition-all duration-300 ease-in-out shadow-md">
+        <span className="text-[13px] bg-secondary text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 transition-all duration-300 ease-in-out shadow-md">
           Request Quote
         </span>
       </Link>
@@ -134,6 +135,7 @@ export default function NavBar() {
             </span>
           </Link>
         </nav>
+      </div>
       </div>
     </header>
   );
