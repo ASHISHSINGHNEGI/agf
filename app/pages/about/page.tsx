@@ -23,79 +23,80 @@ export default function About() {
       icon: <UserGroupIcon className="w-8 h-8" />,
       title: "A Legacy of Global Expertise",
       description:
-        "With over 14 years in the agri-export sector, our leadership brings deep experience in navigating global markets and building trusted food brands.",
+        "Backed by 15+ years of agri-export expertise, we help businesses source premium agricultural products with confidence, consistency, and market insight.",
     },
     {
       icon: <GlobeAltIcon className="w-8 h-8" />,
       title: "Our Fields, The World's Tables",
       description:
-        "We have a robust network that supplies premium agricultural products to over 100 countries, ensuring timely delivery across continents.",
+        "Our global supply network delivers premium agricultural products to customers in over 100 countries, ensuring reliable, on-time shipments across international markets.",
     },
     {
       icon: <ShieldCheckIcon className="w-8 h-8" />,
       title: "A Portfolio of Purity",
       description:
-        "We specialize in the highest quality Basmati Rice, Tea, Chickpeas, and more, all sourced with rigorous standards for authenticity.",
+        "We provide premium Basmati Rice, Tea, Chickpeas, and other agricultural products that meet rigorous quality standards for purity, authenticity, and consistency.",
     },
     {
       icon: <HeartIcon className="w-8 h-8" />,
       title: "Partnerships Built on Trust",
       description:
-        "We build lasting relationships with importers & distributors worldwide, founded on consistency, transparency, and mutual respect.",
+        "We build long-term partnerships with importers and distributors by delivering dependable quality, transparent communication, and reliable service at every stage.",
     },
     {
       icon: <LightBulbIcon className="w-8 h-8" />,
       title: "Tradition Meets Innovation",
       description:
-        "We blend the rich heritage of Indian agriculture with modern, forward-looking processes to deliver unparalleled quality.",
+        "By combining India's agricultural heritage with modern sourcing, processing, and quality control, we deliver products that consistently exceed global expectations.",
     },
     {
       icon: <CheckCircleIcon className="w-8 h-8" />,
       title: "Our Promise in Every Grain",
       description:
-        "Our guiding principle, 'Every Grain, A Promise Kept,' is our commitment to excellence from farm to final destination.",
+        "'Every Grain, A Promise Kept' reflects our commitment to delivering uncompromising quality, reliability, and trust—from the farm to your destination.",
     },
     {
       icon: <CogIcon className="w-8 h-8" />,
       title: "Solutions Tailored for You",
       description:
-        "We offer flexible, customer-focused solutions, adapting our packaging and products to meet diverse cultural and market needs.",
+        "We tailor our products, packaging, and private-label solutions to meet the unique requirements of diverse markets, helping our partners serve their customers more effectively.",
     },
     {
       icon: <TruckIcon className="w-8 h-8" />,
       title: "Reliable, Compliant Supply Chain",
       description:
-        "Our seamless logistics and strict adherence to international food safety standards ensure your products arrive safely and on time.",
+        "With efficient logistics, international food safety compliance, and rigorous quality assurance, we ensure every shipment reaches you safely, on schedule, and ready for market.",
     },
   ];
 
   const coreValues = [
     {
-      icon: <CheckCircleIcon className="w-8 h-8" />,
+      icon: <CheckCircleIcon className="w-8 h-8 text-white"  />,
+ 
       title: "Integrity First",
       description: "Honesty & transparency in every deal.",
       bgColor: "bg-primary",
     },
     {
-      icon: <SparklesIcon className="w-8 h-8" />,
+      icon: <SparklesIcon className="w-8 h-8 text-white" />,
       title: "Quality Without Compromise",
       description: "Every grain speaks of purity.",
       bgColor: "bg-secondary",
     },
     {
-      icon: <HeartIcon className="w-8 h-8" />,
+      icon: <HeartIcon className="w-8 h-8 text-white" />,
       title: "Customer-Centric",
       description: "We grow only when our customers grow.",
       bgColor: "bg-primary",
     },
     {
-      icon: <GlobeAltIcon className="w-8 h-8" />,
+      icon: <GlobeAltIcon className="w-8 h-8 text-white" />,
       title: "Sustainability & Responsibility",
       description: "Eco-friendly farming & farmer empowerment.",
       bgColor: "bg-secondary",
     },
     {
-      icon: <LightBulbIcon className="w-8 h-8" />,
+      icon: <LightBulbIcon className="w-8 h-8 text-white" />,
       title: "Innovation with Tradition",
       description: "Blending heritage with world-class processes.",
       bgColor: "bg-primary",
@@ -111,11 +112,7 @@ export default function About() {
             More Than Rice, A Legacy of Trust
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto text-gray-200 leading-relaxed">
-            At AGF – Anand Global Foods, we are not just exporters, we are
-            custodians of a heritage. Every grain we deliver carries the soul of
-            Punjab's soil, nurtured by farmers who have perfected basmati
-            cultivation for centuries. With honesty, innovation, and global
-            standards, AGF brings India's finest rice to the world.
+          At AGF – Anand Global Foods, we do more than export agricultural products—we bring the richness of India's farming heritage to global markets. Every grain reflects the fertile fields of Punjab and the generations of expertise behind authentic Basmati cultivation. By combining this legacy with uncompromising quality standards, innovation, and reliable global supply, we help businesses worldwide deliver exceptional products to their customers.
           </p>
         </div>
       </section>
@@ -129,24 +126,13 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                Founded by industry veterans with proven expertise in building
-                global FMCG & food brands, Anand Global Foods has established
-                itself as a leading agri-export company that specializes in
-                exporting a wide range of premium agricultural products to
-                international markets.
+              Founded by industry leaders with extensive experience in building successful global FMCG and food brands, Anand Global Foods has grown into a trusted agri-export partner for businesses around the world. We specialize in sourcing and exporting premium agricultural products that meet the evolving demands of international markets through consistent quality, dependable supply, and customer-focused service.
               </p>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                With over 14 years of experience in global agri-export
-                leadership, we have successfully scaled our operations to serve
-                100+ countries across multiple continents, building long-standing
-                relationships based on trust, consistency, and reliability.
+              With over 15 years of leadership experience in the global agri-export industry, we have built a robust international network serving customers in 100+ countries across multiple continents. Our long-term partnerships with importers, distributors, and retailers are built on trust, transparency, timely delivery, and a commitment to consistent product excellence.
               </p>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Our commitment to excellence is guided by our core promise:
-                "Every Grain, A Promise Kept." We combine deep Indian agri-trade
-                roots with a forward-looking multinational approach, ensuring
-                that every product meets the highest international quality
-                standards.
+              Our guiding principle, "Every Grain, A Promise Kept," reflects our commitment to quality, integrity, and reliability at every stage of the supply chain. By blending India's rich agricultural heritage with modern sourcing, processing, and international quality standards, we ensure every shipment consistently meets the expectations of customers worldwide.
               </p>
             </div>
             <div className="relative">
@@ -210,9 +196,7 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-                To deliver pure, authentic basmati with uncompromised quality
-                and timely service — enriching meals worldwide while preserving
-                traditions.
+              To deliver premium, authentic Basmati rice with uncompromising quality, reliable service, and global standards—helping our partners serve consumers with confidence while preserving the rich heritage of Indian agriculture.
               </p>
             </div>
 
@@ -221,9 +205,7 @@ export default function About() {
                 Our Vision
               </h3>
               <p className="text-gray-100 text-base sm:text-lg leading-relaxed">
-                To be the world's most trusted name in premium basmati rice,
-                admired for our commitment to quality, authenticity, and
-                sustainability.
+              To become the world's most trusted premium Basmati rice brand, recognized for exceptional quality, authenticity, sustainable practices, and enduring partnerships across global markets.
               </p>
             </div>
           </div>
