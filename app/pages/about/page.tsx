@@ -112,7 +112,7 @@ export default function About() {
             More Than Rice, A Legacy of Trust
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto text-gray-200 leading-relaxed">
-          At AGF – Anand Global Foods, we do more than export agricultural products—we bring the richness of India's farming heritage to global markets. Every grain reflects the fertile fields of Punjab and the generations of expertise behind authentic Basmati cultivation. By combining this legacy with uncompromising quality standards, innovation, and reliable global supply, we help businesses worldwide deliver exceptional products to their customers.
+          At AGF – Anand Global Foods, we do more than export agricultural products—we bring the richness of India's farming heritage to global markets. Every grain reflects the fertile fields of Punjab & Haryana and the generations of expertise behind authentic Basmati cultivation. By combining this legacy with uncompromising quality standards, innovation, and reliable global supply, we help businesses worldwide deliver exceptional products to their customers.
           </p>
         </div>
       </section>

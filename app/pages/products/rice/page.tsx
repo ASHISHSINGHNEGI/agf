@@ -14,7 +14,7 @@ const galleryImages = [
   },
   {
     src: "/heroGallery/1.jpg",
-    alt: "Vast, sunlit rice paddy fields in Punjab.",
+    alt: "Vast, sunlit rice paddy fields in Punjab & Haryana.",
   },
   {
     src: "/image/rice/_64A8552-1.jpg",
@@ -71,7 +71,7 @@ export default function RiceProductPage() {
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Renowned for its long, slender grains, delicate aroma, and fluffy
               texture, our Basmati rice is cultivated in the fertile plains of
-              Punjab. Each grain is a testament to the region's rich
+              Punjab & Haryana. Each grain is a testament to the region's rich
               agricultural heritage, promising an authentic and flavorful dining
               experience.
             </p>
@@ -94,11 +94,11 @@ export default function RiceProductPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4">
-                From the Heart of Punjab
+                From the Heart of Punjab & Haryana
               </h2>
               <p className="text-gray-600 mb-4">
                 Our Basmati rice is sourced directly from local farming
-                communities in Punjab, India—a region celebrated for producing
+                communities in Punjab & Haryana, India—a region celebrated for producing
                 the world's finest rice. We partner with farmers who employ
                 traditional, sustainable methods passed down through
                 generations.

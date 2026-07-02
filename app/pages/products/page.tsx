@@ -12,7 +12,7 @@ const products = [
     category: "Rice",
     href: "#",
     details: [
-      "Origin: Punjab & Haryana, India",
+      "Origin: Punjab & Haryana & Haryana, India",
       "Grain Length: 8.30 mm+ (raw)",
       "Certifications: ISO 22000, HACCP, FSSAI",
     ],
@@ -25,7 +25,7 @@ const products = [
     category: "Rice",
     href: "#",
     details: [
-      "Origin: Punjab, India",
+      "Origin: Punjab & Haryana, India",
       "Grain Length: 7.50 mm+ (raw)",
       "Certifications: ISO 22000, Non-GMO",
     ],
@@ -64,7 +64,7 @@ const products = [
     category: "Rice",
     href: "#",
     details: [
-      "Origin: Punjab, India",
+      "Origin: Punjab & Haryana, India",
       "Type: Parboiled (Golden Sella)",
       "Certifications: ISO 22000, Kosher",
     ],
@@ -77,7 +77,7 @@ const products = [
     category: "Rice",
     href: "#",
     details: [
-      "Origin: Punjab & Haryana, India",
+      "Origin: Punjab & Haryana & Haryana, India",
       "Type: Steam Processed",
       "Certifications: HACCP, Halal",
     ],
