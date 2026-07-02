@@ -196,7 +196,7 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-              To deliver premium, authentic Basmati rice with uncompromising quality, reliable service, and global standards—helping our partners serve consumers with confidence while preserving the rich heritage of Indian agriculture.
+              To deliver premium, authentic food products with uncompromising quality, reliable service, and global standards—helping our partners serve consumers with confidence while preserving the rich heritage of Indian agriculture.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ export default function About() {
                 Our Vision
               </h3>
               <p className="text-gray-100 text-base sm:text-lg leading-relaxed">
-              To become the world's most trusted premium Basmati rice brand, recognized for exceptional quality, authenticity, sustainable practices, and enduring partnerships across global markets.
+              To become the world's most trusted premium food products brand, recognized for exceptional quality, authenticity, sustainable practices, and enduring partnerships across global markets.
               </p>
             </div>
           </div>
