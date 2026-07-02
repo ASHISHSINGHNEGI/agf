@@ -18,6 +18,21 @@ export const metadata: Metadata = {
   description:
     "Anand Global Foods is a leading agri-export company with 15+ years of global experience, exporting premium Basmati Rice, Sugar, Tea, Coffee, and Spices to 100+ countries.",
   keywords: ["Agri Export", "Basmati Rice", "Refined Sugar", "Indian Spices", "Private Label Packaging", "Anand Global Foods", "Food Exporters"],
+
+  icons: {
+    icon: [
+      {
+        url: "/logo/logoWithoutBg.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/logo/logo.jpeg",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+    apple: "/logo/logoWithoutBg.png",
+  },
+
 };
 
 export default function RootLayout({

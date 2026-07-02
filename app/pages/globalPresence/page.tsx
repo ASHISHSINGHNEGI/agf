@@ -173,7 +173,7 @@ export default function GlobalPresence() {
           {/* Regional Breakdown */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {data.map((country) => (
-              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300" key={country.name}>
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
                     <svg
