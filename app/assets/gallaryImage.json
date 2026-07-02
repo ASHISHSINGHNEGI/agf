@@ -1,24 +1,11 @@
 [
-    {
-      "src": "/heroGallery/1.jpg",
-      "alt": "A vast, sunlit rice paddy field during the day."
-    },
-    {
-      "src": "/heroGallery/2.jpg",
-      "alt": "Farmers harvesting golden rice during sunset."
-    },
-    {
-      "src": "/heroGallery/3.jpg",
-      "alt": "Woven sacks filled with high-quality white rice."
-    },
+   
+   
     {
       "src": "/heroGallery/4.jpg",
       "alt": "A close-up shot of individual grains of uncooked rice."
     },
-    {
-      "src": "/heroGallery/5.jpg",
-      "alt": "Stunning aerial view of cascading rice terraces."
-    },
+ 
     {
       "src": "/heroGallery/6.jpg",
       "alt": "A bowl of perfectly cooked, steaming white rice."
@@ -34,17 +21,8 @@
     {
       "src": "/heroGallery/logistic.PNG",
       "alt": "A wide-angle shot of a massive blue cargo ship stacked high with neat rows of multi-colored shipping containers, cruising across a deep blue, open ocean under a clear, bright sky."
-    },
-    {
+    }, {
       "src": "/heroGallery/logisticWithContainer.PNG",
       "alt": "A dynamic perspective shot of a large cargo ship sailing through blue water, heavily stacked with colorful shipping containers. The left side features a sharp diagonal split showing a vibrant orange background patterned with subtle, stylized rice grain shapes."
-    },
-    {
-      "src": "/heroGallery/riceBowl.PNG",
-      "alt": "A promotional image for Anand Global Foods, split into a bold orange banner and a photograph. The left-side orange banner contains the large, white text title SUPPLY CHAIN DEDICATION and the smaller text subtitle From our door to theirs, delivering satisfaction. The right-side photograph shows a close-up of two hands in the foreground holding a large, brown cardboard box labeled with the green text AGF ANAND GLOBAL FOODS. In the background, the open rear cargo bay of a white delivery truck is visible, containing several other stacked brown cardboard boxes on a wooden pallet under a blue sky with clouds. Smaller boxes inside the truck are also marked with the AGF label."
-    },
-    {
-      "src": "/heroGallery/supplyChain.PNG",
-      "alt": "A clean, unbranded photograph of a delivery being made. A close-up view shows two hands in the foreground holding a large, unmarked, plain brown cardboard box. In the background, the open rear cargo bay of a white delivery box truck is visible, filled with multiple other stacked brown cardboard boxes on a wooden pallet. The far background beyond the truck shows a blue sky with clouds and distant trees."
     }
   ]
