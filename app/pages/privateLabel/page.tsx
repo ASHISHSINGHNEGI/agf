@@ -324,25 +324,25 @@ export default function PrivateLabelPage() {
               {
                 category: "Rice",
                 products: "1121, 1509, 1718, Traditional, Sella, Steam, White, Sona Masoori",
-                img: "/image/products/1121-basmati.jpg",
+                img: "/image/products/1121-basmati.avif",
                 count: "8 Varieties",
               },
               {
                 category: "Beverages",
                 products: "Black Tea, Coffee (Arabica & Robusta)",
-                img: "/image/products/coffee.jpg",
+                img: "/image/products/coffee.avif",
                 count: "2 Products",
               },
               {
                 category: "Spices",
                 products: "Green Cardamom, Whole Spices, Ground Spices",
-                img: "/image/products/cardamom.jpg",
+                img: "/image/products/cardamom.avif",
                 count: "3 Products",
               },
               {
                 category: "Agri Commodities",
                 products: "Refined Sugar, Chickpeas, Peanuts, Sesame Seeds",
-                img: "/image/products/peanuts.jpg",
+                img: "/image/products/peanuts.avif",
                 count: "4 Products",
               },
             ].map((item, index) => (

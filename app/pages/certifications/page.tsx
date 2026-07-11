@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "Certifications",
   description: "View Anand Global Foods' international certifications including ISO 22000, HACCP, BRC, FDA, Halal, Kosher, and Organic, ensuring global quality standards.",
 };
+
+export const dynamic = "force-static";
 import Link from "next/link";
 import {
   ShieldCheckIcon,
@@ -18,7 +20,7 @@ const certifications = [
   {
     name: "ISO 22000",
     fullName: "Food Safety Management System",
-    img: "/image/certifications/iso.jpg",
+    img: "/image/certifications/iso.avif",
     description:
       "ISO 22000 is an internationally recognised standard that ensures a robust food safety management system across our entire supply chain — from sourcing to shipping.",
     scope: [
@@ -34,7 +36,7 @@ const certifications = [
   {
     name: "HACCP",
     fullName: "Hazard Analysis & Critical Control Points",
-    img: "/image/certifications/haccp.jpg",
+    img: "/image/certifications/haccp.avif",
     description:
       "HACCP certification validates our systematic approach to identifying, evaluating, and controlling food safety hazards at every stage of production.",
     scope: [
@@ -50,7 +52,7 @@ const certifications = [
   {
     name: "BRC",
     fullName: "British Retail Consortium Global Standard",
-    img: "/image/certifications/brc.jpg",
+    img: "/image/certifications/brc.avif",
     description:
       "BRC certification demonstrates that our products meet the rigorous safety, quality, and operational standards required by leading global retailers.",
     scope: [
@@ -165,7 +167,7 @@ const trustStats = [
   { value: "9+", label: "Certifications" },
   { value: "100+", label: "Countries Served" },
   { value: "100%", label: "Traceability" },
-  { value: "14+", label: "Years of Trust" },
+  { value: "15+", label: "Years of Trust" },
 ];
 
 export default function CertificationsPage() {

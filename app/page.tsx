@@ -1,11 +1,11 @@
-import Image from "next/image";
-import Card from "./components/card";
+import { GlobeAltIcon, ShieldCheckIcon, TrophyIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import type { Metadata } from "next";
+import Link from "next/link";
+import galleryImages from "./assets/gallaryImage.json";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
-import Link from "next/link";
-import { GlobeAltIcon, TrophyIcon, ShieldCheckIcon, UserGroupIcon } from "@heroicons/react/24/outline";
-import type { Metadata } from "next";
-import galleryImages from "./assets/gallaryImage.json";
+
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -48,7 +48,7 @@ export default function Home() {
             <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-secondary transition-colors duration-300">
               <TrophyIcon className="w-7 h-7 text-secondary group-hover:text-white transition-colors duration-300" />
             </div>
-            <h3 className="text-xl font-bold text-primary mb-2">14+ Years Legacy</h3>
+            <h3 className="text-xl font-bold text-primary mb-2">15+ Years Legacy</h3>
             <p className="text-gray-600 text-sm leading-relaxed">Cultivating and exporting excellence since day one.</p>
           </div>
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/10 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center group border border-gray-100">
@@ -99,7 +99,7 @@ export default function Home() {
                 Global Export Experience
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                14+ years of hands-on expertise exporting premium agri-products to 100+ countries across every continent.
+                15+ years of hands-on expertise exporting premium agri-products to 100+ countries across every continent.
               </p>
             </div>
 
@@ -224,15 +224,17 @@ export default function Home() {
       </section>
 
       {/* Featured Products */}
-      <section className="p-4 sm:p-6 md:p-10 text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-6 sm:mb-8">
-          Featured Products
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.jpg" />
-          <FeatureCard text="Sugar" imgSrc="/image/products/sugar.jpg" />
-          <FeatureCard text="Tea" imgSrc="/image/products/tea.jpg" />
-          <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.jpg" />
+      <section className="py-12 sm:py-16 lg:py-20 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-6 sm:mb-8">
+            Featured Products
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.avif" />
+            <FeatureCard text="Sugar" imgSrc="/image/products/sugar.avif" />
+            <FeatureCard text="Tea" imgSrc="/image/products/tea.avif" />
+            <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.avif" />
+          </div>
         </div>
       </section>
 

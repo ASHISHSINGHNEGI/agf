@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "Global Presence",
   description: "Anand Global Foods exports premium agri-commodities to over 100 countries across Asia, Africa, Europe, Americas, and Oceania.",
 };
+
+export const dynamic = "force-static";
 const data = [
   {
     name: "Africa",
@@ -99,7 +101,7 @@ export default function GlobalPresence() {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-primary mb-2">14+</h3>
+              <h3 className="text-2xl font-bold text-primary mb-2">15+</h3>
               <p className="text-gray-600">Years of Excellence</p>
             </div>
 
@@ -159,9 +161,9 @@ export default function GlobalPresence() {
               </div>
 
               {/* Map Container */}
-              <div className="relative w-full h-80 sm:h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-green-50 border-2 border-primary/20">
+              <div className="relative w-full h-80 sm:h-96 lg:h-[500px] rounded-2xl overflow-hidden ">
                 <Image
-                  src="/mission.jpg"
+                  src="/global3.avif"
                   alt="Global Presence Map"
                   fill
                   className="object-contain p-4"
@@ -173,7 +175,7 @@ export default function GlobalPresence() {
           {/* Regional Breakdown */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {data.map((country) => (
-              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300" key={country.name}>
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
                     <svg

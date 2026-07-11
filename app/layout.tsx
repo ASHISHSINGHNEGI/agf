@@ -9,6 +9,7 @@ const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
 });
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
 
 export const metadata: Metadata = {
   title: {
@@ -16,8 +17,23 @@ export const metadata: Metadata = {
     default: "Anand Global Foods | Premium Agri-Export Company",
   },
   description:
-    "Anand Global Foods is a leading agri-export company with 14+ years of global experience, exporting premium Basmati Rice, Sugar, Tea, Coffee, and Spices to 100+ countries.",
+    "Anand Global Foods is a leading agri-export company with 15+ years of global experience, exporting premium Basmati Rice, Sugar, Tea, Coffee, and Spices to 100+ countries.",
   keywords: ["Agri Export", "Basmati Rice", "Refined Sugar", "Indian Spices", "Private Label Packaging", "Anand Global Foods", "Food Exporters"],
+
+  icons: {
+    icon: [
+      {
+        url: "/logo/logoWithoutBg.avif",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/logo/logo.avif",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+    apple: "/logo/logoWithoutBg.avif",
+  },
+
 };
 
 export default function RootLayout({
@@ -29,7 +45,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} antialiased font-sans`}>
         <NavBar />
-        {children}
+        <main className="px-[2%]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

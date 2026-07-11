@@ -68,7 +68,7 @@ function ProductCard({
               </li>
             ))}
           </ul>
-          <div className="flex gap-3 mt-auto">
+          {/* <div className="flex gap-3 mt-auto">
             <Link href={href} className="flex-1">
               <button className="w-full bg-primary text-white py-3 px-4 rounded-lg font-medium hover:bg-primary/90 transition-all duration-300 text-sm sm:text-base">
                 View Details
@@ -89,7 +89,7 @@ function ProductCard({
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

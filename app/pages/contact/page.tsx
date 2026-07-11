@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Get in touch with Anand Global Foods. Submit your Request for Quote (RFQ) for premium agri-products, or contact our global headquarters in India or our UAE office.",
 };
 
+export const dynamic = "force-static";
+
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">

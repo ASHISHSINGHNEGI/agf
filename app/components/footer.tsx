@@ -4,15 +4,14 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white -mx-[2.1%]">
+    <footer className="bg-primary text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info & Logo */}
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Image
-                src="/logo/logoWithoutBg.png"
+                src="/logo/logoWithoutBg.avif"
                 alt="AGF Logo"
                 width={120}
                 height={120}
@@ -20,7 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Backed by 14+ Years of Global Agri-Export Leadership – Founded by
+              Backed by 15+ Years of Global Agri-Export Leadership – Founded by
               industry veterans with proven expertise in building global FMCG &
               food brands. Anand Global Foods is a leading agri-export company
               that specializes in exporting a wide range of products to
@@ -201,9 +200,11 @@ export default function Footer() {
                   />
                 </svg>
                 <p className="text-gray-300 text-sm">
-                  123 Business District,
+                  Anand Global Foods
                   <br />
-                  City, State 12345
+                  Plot No. 5, Adarsh Nagar,
+                  <br/>
+                  Khanna - 141401, Punjab, India
                 </p>
               </div>
               <div className="flex items-start space-x-3">
