@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "About Us",
   description: "Learn about Anand Global Foods, our 15+ years legacy, mission, vision, and the core values that drive our agri-export excellence worldwide.",
 };
+
+export const dynamic = "force-static";
 import {
   CheckCircleIcon,
   GlobeAltIcon,

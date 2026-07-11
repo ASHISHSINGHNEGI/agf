@@ -5,6 +5,8 @@ import galleryImages from "./assets/gallaryImage.json";
 import FeatureCard from "./components/FeatureCard";
 import Gallery from "./components/gallery";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "Home",
   description: "Anand Global Foods exports premium Basmati Rice, Sugar, Spices, and Agri-Commodities to 100+ countries. Partner with us for trusted quality.",

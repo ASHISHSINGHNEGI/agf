@@ -5,6 +5,8 @@ export const metadata: Metadata = {
   title: "Certifications",
   description: "View Anand Global Foods' international certifications including ISO 22000, HACCP, BRC, FDA, Halal, Kosher, and Organic, ensuring global quality standards.",
 };
+
+export const dynamic = "force-static";
 import Link from "next/link";
 import {
   ShieldCheckIcon,
