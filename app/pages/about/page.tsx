@@ -140,7 +140,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/heroGallery/1.jpg"
+                  src="/heroGallery/1.avif"
                   alt="AGF Global Operations"
                   fill
                   className="object-cover"

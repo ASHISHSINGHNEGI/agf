@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Image
-                src="/logo/logoWithoutBg.png"
+                src="/logo/logoWithoutBg.avif"
                 alt="AGF Logo"
                 width={120}
                 height={120}

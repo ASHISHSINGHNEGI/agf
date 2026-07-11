@@ -9,19 +9,19 @@ import {
 
 const galleryImages = [
   {
-    src: "/image/products/rice.jpg",
+    src: "/image/products/rice.avif",
     alt: "A bowl of perfectly cooked Basmati rice.",
   },
   {
-    src: "/heroGallery/1.jpg",
+    src: "/heroGallery/1.avif",
     alt: "Vast, sunlit rice paddy fields in Punjab & Haryana.",
   },
   {
-    src: "/image/rice/_64A8552-1.jpg",
+    src: "/image/rice/_64A8552-1.avif",
     alt: "Close-up of long, uncooked Basmati rice grains.",
   },
   {
-    src: "/heroGallery/3.jpg",
+    src: "/heroGallery/3.avif",
     alt: "Woven sacks filled with high-quality white rice.",
   },
 ];
@@ -111,7 +111,7 @@ export default function RiceProductPage() {
             </div>
             <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/heroGallery/2.jpg"
+                src="/heroGallery/2.avif"
                 alt="Farmers harvesting golden rice during sunset."
                 fill
                 className="object-cover"

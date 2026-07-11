@@ -230,10 +230,10 @@ export default function Home() {
             Featured Products
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-            <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.jpg" />
-            <FeatureCard text="Sugar" imgSrc="/image/products/sugar.jpg" />
-            <FeatureCard text="Tea" imgSrc="/image/products/tea.jpg" />
-            <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.jpg" />
+            <FeatureCard text="Basmati Rice" imgSrc="/image/products/rice.avif" />
+            <FeatureCard text="Sugar" imgSrc="/image/products/sugar.avif" />
+            <FeatureCard text="Tea" imgSrc="/image/products/tea.avif" />
+            <FeatureCard text="Chickpeas" imgSrc="/image/products/chickpea.avif" />
           </div>
         </div>
       </section>

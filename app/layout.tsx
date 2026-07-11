@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/logo/logoWithoutBg.png",
+        url: "/logo/logoWithoutBg.avif",
         media: "(prefers-color-scheme: light)",
       },
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
     ],
-    apple: "/logo/logoWithoutBg.png",
+    apple: "/logo/logoWithoutBg.avif",
   },
 
 };
