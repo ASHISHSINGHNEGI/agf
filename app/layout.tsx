@@ -9,6 +9,7 @@ const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
 });
+<meta name="apple-mobile-web-app-title" content="MyWebSite" />
 
 export const metadata: Metadata = {
   title: {
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/logo/logo.jpeg",
+        url: "/logo/logo.avif",
         media: "(prefers-color-scheme: dark)",
       },
     ],
