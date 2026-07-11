@@ -6,7 +6,7 @@ const products = [
   // ── Rice ──
   {
     name: "1121 Basmati Rice",
-    img: "/image/products/1121-basmati.jpg",
+    img: "/image/products/1121-basmati.avif",
     description:
       "The king of Basmati — extra-long grain with exceptional aroma and elongation up to 22 mm after cooking.",
     category: "Rice",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     name: "1509 Basmati Rice",
-    img: "/image/products/1509-basmati.jpg",
+    img: "/image/products/1509-basmati.avif",
     description:
       "A cost-effective premium Basmati with long grains, sweet aroma, and fluffy texture after cooking.",
     category: "Rice",
@@ -32,7 +32,7 @@ const products = [
   },
   {
     name: "1718 Basmati Rice",
-    img: "/image/products/1718-basmati.jpg",
+    img: "/image/products/1718-basmati.avif",
     description:
       "A newer Basmati cultivar offering excellent elongation and aroma at a competitive price point.",
     category: "Rice",
@@ -45,7 +45,7 @@ const products = [
   },
   {
     name: "Traditional Basmati Rice",
-    img: "/image/products/traditional-basmati.jpg",
+    img: "/image/products/traditional-basmati.avif",
     description:
       "Heritage Basmati aged for 12–24 months, delivering the finest aroma and delicate, non-sticky grains.",
     category: "Rice",
@@ -58,7 +58,7 @@ const products = [
   },
   {
     name: "Sella Basmati Rice",
-    img: "/image/products/sella-rice.jpg",
+    img: "/image/products/sella-rice.avif",
     description:
       "Parboiled Basmati with golden hue, firmer texture and higher nutritional retention — ideal for Biryani.",
     category: "Rice",
@@ -71,7 +71,7 @@ const products = [
   },
   {
     name: "Steam Basmati Rice",
-    img: "/image/products/steam-rice.jpg",
+    img: "/image/products/steam-rice.avif",
     description:
       "Lightly steamed Basmati rice with a creamy white appearance and softer texture than Sella.",
     category: "Rice",
@@ -84,7 +84,7 @@ const products = [
   },
   {
     name: "White Rice",
-    img: "/image/products/white-rice.jpg",
+    img: "/image/products/white-rice.avif",
     description:
       "Polished non-Basmati white rice, versatile and budget-friendly for everyday consumption worldwide.",
     category: "Rice",
@@ -97,7 +97,7 @@ const products = [
   },
   {
     name: "Sona Masoori Rice",
-    img: "/image/products/sona-masoori.jpg",
+    img: "/image/products/sona-masoori.avif",
     description:
       "Lightweight, aromatic medium-grain rice from South India — low in starch and ideal for daily meals.",
     category: "Rice",
@@ -112,7 +112,7 @@ const products = [
   // ── Beverages ──
   {
     name: "Black Tea",
-    img: "/image/products/tea.jpg",
+    img: "/image/products/tea.avif",
     description:
       "Full-bodied and aromatic black tea from select plantations in Assam and Darjeeling.",
     category: "Beverages",
@@ -125,7 +125,7 @@ const products = [
   },
   {
     name: "Coffee",
-    img: "/image/products/coffee.jpg",
+    img: "/image/products/coffee.avif",
     description:
       "Single-origin Arabica and Robusta beans from the Western Ghats — rich, bold, and export-ready.",
     category: "Beverages",
@@ -140,7 +140,7 @@ const products = [
   // ── Spices ──
   {
     name: "Green Cardamom",
-    img: "/image/products/cardamom.jpg",
+    img: "/image/products/cardamom.avif",
     description:
       "The 'Queen of Spices' — intensely aromatic green pods handpicked from Kerala plantations.",
     category: "Spices",
@@ -153,7 +153,7 @@ const products = [
   },
   {
     name: "Whole Spices",
-    img: "/image/products/whole-spices.jpg",
+    img: "/image/products/whole-spices.avif",
     description:
       "A curated range of whole spices — cinnamon, cloves, star anise, cumin, black pepper and more.",
     category: "Spices",
@@ -166,7 +166,7 @@ const products = [
   },
   {
     name: "Ground Spices",
-    img: "/image/products/ground-spices.jpg",
+    img: "/image/products/ground-spices.avif",
     description:
       "Finely milled spice powders — turmeric, chili, coriander and cumin — vibrant in colour and flavour.",
     category: "Spices",
@@ -177,11 +177,22 @@ const products = [
       "Certifications: FSSAI, Halal, ISO 22000",
     ],
   },
+  {
+    name: "Saffron",
+    img: "/image/products/saffron.avif",
+    description: "Finest Kashmiri Saffron from Kashmir.",
+    category: "Spices",
+    href: "#",
+    details: [
+      "Origin: Kashmir, India",
+      "Certifications: ISO 22000, Halal",
+    ],
+  },
 
   // ── Agri Commodities ──
   {
     name: "Refined Sugar",
-    img: "/image/products/sugar.jpg",
+    img: "/image/products/sugar.avif",
     description:
       "High-purity crystalline sugar for domestic and industrial use, meeting ICUMSA standards.",
     category: "Agri Commodities",
@@ -194,7 +205,7 @@ const products = [
   },
   {
     name: "Kabuli Chickpeas",
-    img: "/image/products/chickpea.jpg",
+    img: "/image/products/chickpea.avif",
     description:
       "Large, creamy chickpeas perfect for hummus, salads and a wide variety of global cuisines.",
     category: "Agri Commodities",
@@ -207,7 +218,7 @@ const products = [
   },
   {
     name: "Peanuts",
-    img: "/image/products/peanuts.jpg",
+    img: "/image/products/peanuts.avif",
     description:
       "Bold and Java peanuts — crunchy, high-oil-content groundnuts ideal for snacking and oil extraction.",
     category: "Agri Commodities",
@@ -220,7 +231,7 @@ const products = [
   },
   {
     name: "Sesame Seeds",
-    img: "/image/products/sesame-seeds.jpg",
+    img: "/image/products/sesame-seeds.avif",
     description:
       "Premium hulled and natural sesame seeds — rich in nutrients and prized for oil, tahini and confectionery.",
     category: "Agri Commodities",
