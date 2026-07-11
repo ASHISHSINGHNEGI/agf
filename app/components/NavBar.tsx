@@ -33,26 +33,26 @@ export default function NavBar() {
             Home
           </span>
         </Link>
-        <Link href="/pages/about">
+        {/* <Link href="/pages/about">
           <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             About
           </span>
-        </Link>
+        </Link> */}
         <Link href="/pages/products">
           <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Products
           </span>
         </Link>
-        <Link href="/pages/globalPresence">
+        {/* <Link href="/pages/globalPresence">
           <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Global Presence
           </span>
-        </Link>
-        <Link href="/pages/certifications">
+        </Link> */}
+        {/* <Link href="/pages/certifications">
           <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Certifications
           </span>
-        </Link>
+        </Link> */}
         <Link href="/pages/privateLabel">
           <span className="text-[14px] hover:text-primary px-3 py-1.5 rounded-md transition-all duration-300 ease-in-out">
             Private Label

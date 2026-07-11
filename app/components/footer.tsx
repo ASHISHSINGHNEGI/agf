@@ -200,9 +200,11 @@ export default function Footer() {
                   />
                 </svg>
                 <p className="text-gray-300 text-sm">
-                  123 Business District,
+                  Anand Global Foods
                   <br />
-                  City, State 12345
+                  Plot No. 5, Adarsh Nagar,
+                  <br/>
+                  Khanna - 141401, Punjab, India
                 </p>
               </div>
               <div className="flex items-start space-x-3">
