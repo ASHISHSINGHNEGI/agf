@@ -61,3 +61,33 @@ body {
         animation: shrink linear forwards;
     }
 }
+
+/* ── Floating WhatsApp Button ── */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: wa-pulse 2.5s ease-in-out infinite;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.12);
+    box-shadow: 0 8px 28px rgba(37, 211, 102, 0.65);
+    animation: none;
+}
+
+@keyframes wa-pulse {
+    0%, 100% { box-shadow: 0 4px 16px rgba(37, 211, 102, 0.45); }
+    50%       { box-shadow: 0 4px 28px rgba(37, 211, 102, 0.75), 0 0 0 8px rgba(37, 211, 102, 0.12); }
+}
