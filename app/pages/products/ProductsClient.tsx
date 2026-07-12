@@ -1,6 +1,7 @@
 "use client";
 import ProductCard from "@/app/components/ProductCard";
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 const products = [
   // ── Rice ──
@@ -244,8 +245,16 @@ const products = [
   },
 ];
 
-export default function ProductsClient() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+function ProductsInner() {
+  const searchParams = useSearchParams();
+  const initialCategory = searchParams.get("category") ?? "All";
+  const [selectedCategory, setSelectedCategory] = useState(initialCategory);
+
+  // Sync if URL param changes (e.g. browser back/forward)
+  useEffect(() => {
+    const cat = searchParams.get("category") ?? "All";
+    setSelectedCategory(cat);
+  }, [searchParams]);
 
   const filteredProducts =
     selectedCategory === "All"
@@ -336,5 +345,13 @@ export default function ProductsClient() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function ProductsClient() {
+  return (
+    <Suspense fallback={null}>
+      <ProductsInner />
+    </Suspense>
   );
 }

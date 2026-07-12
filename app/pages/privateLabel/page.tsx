@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Private Label & Contract Packaging",
   description: "End-to-end private label and contract packaging solutions for premium agri-products. We offer custom branding, design support, and market-specific retail packaging.",
 };
-import Link from "next/link";
 import {
   SparklesIcon,
   CubeIcon,
@@ -346,9 +346,10 @@ export default function PrivateLabelPage() {
                 count: "4 Products",
               },
             ].map((item, index) => (
-              <div
+              <Link
                 key={index}
-                className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                href={`/pages/products?category=${encodeURIComponent(item.category)}`}
+                className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 block cursor-pointer"
               >
                 <div className="relative h-64 sm:h-72">
                   <Image
@@ -370,7 +371,7 @@ export default function PrivateLabelPage() {
                     {item.products}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
