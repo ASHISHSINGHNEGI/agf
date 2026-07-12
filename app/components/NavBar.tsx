@@ -67,7 +67,7 @@ export default function NavBar() {
 
       {/* Desktop CTA */}
       <Link href="/pages/contact" className="hidden md:block">
-        <span className="text-[13px] bg-secondary text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 transition-all duration-300 ease-in-out shadow-md">
+        <span className="text-[16px] bg-secondary text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-600 hover:scale-105 transition-all duration-300 ease-in-out shadow-md">
           Request Quote
         </span>
       </Link>
