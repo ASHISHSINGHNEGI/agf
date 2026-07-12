@@ -254,7 +254,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="mt-12 pt-8 border-t border-gray-700">
+        {/* <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="max-w-md mx-auto text-center">
             <h3 className="text-lg font-semibold mb-4 text-secondary">
               Stay Updated
@@ -273,7 +273,7 @@ export default function Footer() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom Bar */}
@@ -296,12 +296,12 @@ export default function Footer() {
               >
                 Terms of Service
               </Link>
-              <Link
+              {/* <Link
                 href="/sitemap"
                 className="hover:text-white transition-colors duration-300"
               >
                 Sitemap
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -333,12 +333,18 @@ function ProductsInner() {
                 solutions and bulk orders tailored to your requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300 text-lg">
+                <a
+                  href="mailto:sales@anandglobalfoods.com?subject=Product%20Inquiry%20%E2%80%93%20Anand%20Global%20Foods&body=Hello%20Sales%20Team%2C%0A%0AI%20am%20interested%20in%20your%20products%20and%20would%20like%20to%20get%20more%20information.%0A%0AProduct%3A%20%0AQuantity%3A%20%0ADestination%3A%20%0A%0AThank%20you."
+                  className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300 text-lg text-center"
+                >
                   Contact Sales Team
-                </button>
-                <button className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300 text-lg">
+                </a>
+                <a
+                  href="/pages/contact"
+                  className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300 text-lg text-center"
+                >
                   Request Quote
-                </button>
+                </a>
               </div>
             </div>
           </div>
