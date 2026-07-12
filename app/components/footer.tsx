@@ -140,7 +140,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/pages/products"
+                  href="/pages/products?category=Rice"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Basmati Rice
@@ -148,7 +148,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/pages/products"
+                  href="/pages/products?category=Agri%20Commodities"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Sugar
@@ -156,7 +156,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/pages/products"
+                  href="/pages/products?category=Beverages"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Tea
@@ -164,7 +164,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/pages/products"
+                  href="/pages/products?category=Agri%20Commodities"
                   className="text-gray-300 hover:text-white transition-colors duration-300"
                 >
                   Chickpeas
