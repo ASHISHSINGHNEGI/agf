@@ -6,7 +6,9 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {" "}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info & Logo */}
           <div className="lg:col-span-1">
             <div className="mb-6">
@@ -135,7 +137,12 @@ export default function Footer() {
                   download
                   className="inline-flex items-center gap-1.5 text-secondary hover:text-orange-400 transition-colors duration-300 font-medium"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-3.5 h-3.5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    className="w-3.5 h-3.5"
+                  >
                     <path d="M8.75 2.75a.75.75 0 0 0-1.5 0v5.69L5.03 6.22a.75.75 0 0 0-1.06 1.06l3.5 3.5a.75.75 0 0 0 1.06 0l3.5-3.5a.75.75 0 0 0-1.06-1.06L8.75 8.44V2.75Z" />
                     <path d="M3.5 9.75a.75.75 0 0 0-1.5 0v1.5A2.75 2.75 0 0 0 4.75 14h6.5A2.75 2.75 0 0 0 14 11.25v-1.5a.75.75 0 0 0-1.5 0v1.5c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25v-1.5Z" />
                   </svg>
@@ -216,7 +223,7 @@ export default function Footer() {
                   Anand Global Foods
                   <br />
                   69-A, Ranjit Vihar
-                  <br/>
+                  <br />
                   Loharka Road, Amritsar, Punjab, India
                 </p>
               </div>
@@ -252,7 +259,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         {/* Newsletter Subscription */}
         {/* <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="max-w-md mx-auto text-center">
@@ -285,23 +291,11 @@ export default function Footer() {
             </div>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link
-                href="/privacy"
+                href="/policies"
                 className="hover:text-white transition-colors duration-300"
               >
-                Privacy Policy
+                Policies
               </Link>
-              <Link
-                href="/terms"
-                className="hover:text-white transition-colors duration-300"
-              >
-                Terms of Service
-              </Link>
-              {/* <Link
-                href="/sitemap"
-                className="hover:text-white transition-colors duration-300"
-              >
-                Sitemap
-              </Link> */}
             </div>
           </div>
         </div>

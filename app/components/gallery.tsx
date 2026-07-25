@@ -19,12 +19,7 @@ const ScrollableGallery = ({
     );
   };
 
-  // Function to go to the previous image
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1
-    );
-  };
+
 
   // useEffect for auto-scrolling
   useEffect(() => {
@@ -74,50 +69,8 @@ const ScrollableGallery = ({
       {/* Overlay (optional for darkening) */}
       <div className="absolute inset-0 bg-black/40 z-10"></div>
 
-      {/* Navigation */}
 
-      {/* Thumbnails in bottom right corner */}
-      <div className="absolute bottom-6 right-6 flex items-center justify-end gap-2 sm:gap-3 z-20 max-w-[90vw]">
-        {getThumbnailIndices().map((index) => {
-          const image = galleryImages[index];
-          const isActive = index === currentIndex;
-          
-          return (
-            <button
-              key={`thumb-${index}`}
-              onClick={() => setCurrentIndex(index)}
-              className={`relative flex-shrink-0 transition-all duration-500 ease-in-out rounded-lg overflow-hidden border-2 ${
-                isActive
-                  ? "w-24 h-16 sm:w-32 sm:h-24 border-secondary scale-105 shadow-xl shadow-black/50 opacity-100 z-10"
-                  : "w-16 h-10 sm:w-20 sm:h-14 border-white/30 opacity-60 hover:opacity-100 hover:border-white/80"
-              }`}
-              aria-label={`Go to image ${index + 1}`}
-            >
-              <Image
-                src={image.src}
-                alt={`Thumbnail for ${image.alt}`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100px, 150px"
-              />
-              
-              {/* Decreasing progress line for active thumbnail */}
-              {isActive && (
-                <div 
-                  key={`progress-${currentIndex}`}
-                  className="absolute bottom-0 left-0 h-1.5 bg-secondary z-20 animate-shrink origin-left"
-                  style={{ animationDuration: `${autoScrollInterval}ms` }}
-                />
-              )}
-
-              {/* Dark overlay for inactive thumbnails */}
-              {!isActive && (
-                <div className="absolute inset-0 bg-black/40 hover:bg-transparent transition-colors duration-300 z-10"></div>
-              )}
-            </button>
-          );
-        })}
-      </div>
+     
     </div>
   );
 };
