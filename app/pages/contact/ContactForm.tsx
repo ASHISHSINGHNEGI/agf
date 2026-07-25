@@ -239,8 +239,8 @@ export default function ContactForm() {
                 <h4 className="text-lg font-semibold mb-2">Global Headquarters</h4>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   Anand Global Foods<br />
-                  Plot No. 5, Adarsh Nagar,<br />
-                  Khanna - 141401, Punjab, India
+                  69-A, Ranjit Vihar, Loharka Road,
+                  Amritsar, Punjab, India
                 </p>
               </div>
             </div>

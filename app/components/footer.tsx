@@ -215,9 +215,9 @@ export default function Footer() {
                 <p className="text-gray-300 text-sm">
                   Anand Global Foods
                   <br />
-                  Plot No. 5, Adarsh Nagar,
+                  69-A, Ranjit Vihar
                   <br/>
-                  Khanna - 141401, Punjab, India
+                  Loharka Road, Amritsar, Punjab, India
                 </p>
               </div>
               <div className="flex items-start space-x-3">
