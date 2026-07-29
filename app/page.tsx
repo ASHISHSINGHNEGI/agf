@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import galleryImages from "./assets/gallaryImage.json";
 import FeatureCard from "./components/FeatureCard";
-import Gallery from "./components/gallery";
-
+import Hero from "./components/Hero";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
@@ -15,37 +14,7 @@ export default function Home() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative text-center min-h-[calc(100svh-60px)] -mx-[2.1%] flex items-center justify-center">
-        <div className="absolute inset-0">
-          <Gallery galleryImages={galleryImages} />
-        </div>
-        <div className="relative p-4 sm:p-6 md:p-8 text-white">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold mb-3 sm:mb-4 leading-tight">
-            Every Grain, A Promise Kept
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 max-w-4xl mx-auto">
-            Exporting Trust & Tradition To The World
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-            <Link href="/pages/products" passHref>
-              <button className="bg-secondary px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-orange-600 hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg text-sm sm:text-base w-full sm:w-auto">
-                Explore Our Products
-              </button>
-            </Link>
-            <a
-              href="/brochure/AGF-Brochure.pdf"
-              download
-              className="inline-flex items-center gap-2 border-2 border-white text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 ease-in-out text-sm sm:text-base w-full sm:w-auto justify-center"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                <path d="M10.75 2.75a.75.75 0 0 0-1.5 0v8.614L6.295 8.235a.75.75 0 1 0-1.09 1.03l4.25 4.5a.75.75 0 0 0 1.09 0l4.25-4.5a.75.75 0 0 0-1.09-1.03l-2.955 3.129V2.75Z" />
-                <path d="M3.5 12.75a.75.75 0 0 0-1.5 0v2.5A2.75 2.75 0 0 0 4.75 18h10.5A2.75 2.75 0 0 0 18 15.25v-2.5a.75.75 0 0 0-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5Z" />
-              </svg>
-              Download Brochure
-            </a>
-          </div>
-        </div>
-      </section>
+      <Hero galleryImages={galleryImages} />
 
       {/* Highlights */}
       <section className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
