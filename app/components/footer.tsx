@@ -7,17 +7,17 @@ export default function Footer() {
     <footer className="bg-primary text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {" "}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info & Logo */}
           <div className="lg:col-span-1">
             <div className="mb-6">
               <Image
-                src="/logo/logoWithoutBg.avif"
+                src="/logo/AGFLogo.PNG"
+                // src="/logo/logoWithoutBg.avif"
                 alt="AGF Logo"
-                width={120}
-                height={120}
-                className="w-auto h-16 filter brightness-0 invert"
+                width={240}
+                height={240}
+                className="w-auto h-24 filter brightness-0 invert"
               />
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
