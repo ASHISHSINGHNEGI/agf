@@ -22,7 +22,7 @@ export default function NavBar() {
           <Link href="/" className="flex items-baseline gap-1.5">
             <img
               // src="/logo/logoWithoutBg.avif"
-              src="/logo/AGFLogo_withoutTagLine.PNG"
+              src="/logo/AGFLogo_withoutTagLine1.avif"
               alt="Anand Global Foods Logo"
               className="h-20 w-auto object-contain"
             />
