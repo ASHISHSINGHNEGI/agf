@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-2">
               <Image
-                src="/logo/AGFLogo.PNG"
+                src="/logo/AGFLogo.avif"
                 // src="/logo/logoWithoutBg.avif"
                 alt="AGF Logo"
                 width={240}
