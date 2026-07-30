@@ -62,16 +62,16 @@ export default function Hero({
           className="min-h-[180px] flex flex-col items-center justify-center mb-6 text-center transition-opacity duration-500"
           key={currentIndex}
         >
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-3 sm:mb-4">
+          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-4">
             {galleryImages[currentIndex]?.title?.trim()}
           </h1>
           {galleryImages[currentIndex]?.subtitle && (
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl mx-auto text-gray-100">
+            <p className="text-base sm:text-base md:text-lg lg:text-xl max-w-4xl mx-auto text-gray-100">
               {galleryImages[currentIndex]?.subtitle.trim()}
             </p>
           )}
           {galleryImages[currentIndex]?.subtext && (
-            <span className="italic text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 text-orange-200 font-medium tracking-wide">
+            <span className="italic text-base sm:text-lg md:text-xl mb-2 sm:mb-3 text-orange-200 font-medium tracking-wide">
               {galleryImages[currentIndex]?.subtext.trim()}
             </span>
           )}
