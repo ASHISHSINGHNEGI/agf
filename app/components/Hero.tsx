@@ -33,7 +33,7 @@ export default function Hero({
   }, [galleryImages.length, autoScrollInterval, currentIndex]);
 
   return (
-    <section className="relative text-center min-h-[calc(100svh-60px)] -mx-[2.1%] flex items-center justify-center overflow-hidden">
+    <section className="relative text-center min-h-[60svh] md:min-h-[calc(100svh-60px)] -mx-[2.1%] flex items-center justify-center overflow-hidden">
       {/* Background Images */}
       {galleryImages.map((image, index) => (
         <div
