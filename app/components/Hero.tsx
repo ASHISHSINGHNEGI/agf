@@ -57,12 +57,12 @@ export default function Hero({
       <div className="absolute inset-0 bg-black/40 z-10"></div>
 
       {/* Content */}
-      <div className="relative z-20 p-4 sm:p-6 md:p-8 text-white w-full max-w-4xl mx-auto flex flex-col items-center">
+      <div className="relative z-20 p-4 sm:p-6 md:p-8 text-white w-full max-w-7xl mx-auto flex flex-col items-center">
         <div
           className="min-h-[180px] flex flex-col items-center justify-center mb-6 text-center transition-opacity duration-500"
           key={currentIndex}
         >
-          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-4">
+          <h1 className="text-[28px] sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-3 sm:mb-4 whitespace-pre-line">
             {galleryImages[currentIndex]?.title?.trim()}
           </h1>
           {galleryImages[currentIndex]?.subtitle && (
