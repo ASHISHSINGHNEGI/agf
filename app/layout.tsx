@@ -17,7 +17,15 @@ export const metadata: Metadata = {
   },
   description:
     "Anand Global Foods is a leading agri-export company with 15+ years of global experience, exporting premium Basmati Rice, Sugar, Tea, Coffee, and Spices to 100+ countries.",
-  keywords: ["Agri Export", "Basmati Rice", "Refined Sugar", "Indian Spices", "Private Label Packaging", "Anand Global Foods", "Food Exporters"],
+  keywords: [
+    "Agri Export",
+    "Basmati Rice",
+    "Refined Sugar",
+    "Indian Spices",
+    "Private Label Packaging",
+    "Anand Global Foods",
+    "Food Exporters",
+  ],
 
   icons: {
     icon: [
@@ -33,6 +41,31 @@ export const metadata: Metadata = {
     apple: "/logo/logoWithoutBg.avif",
   },
 
+  openGraph: {
+    title: "Anand Global Foods | Premium Agri-Export Company",
+    description:
+      "Anand Global Foods exports premium Basmati Rice, Sugar, Spices, and Agri-Commodities to 100+ countries. Partner with us for trusted quality.",
+    url: "https://anandglobalfoods.com",
+    siteName: "Anand Global Foods",
+    images: [
+      {
+        url: "https://anandglobalfoods.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Anand Global Foods",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Anand Global Foods | Premium Agri-Export Company",
+    description:
+      "Anand Global Foods exports premium Basmati Rice, Sugar, Spices, and Agri-Commodities to 100+ countries.",
+    images: ["https://anandglobalfoods.com/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -44,9 +77,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} antialiased font-sans`}>
         <NavBar />
-        <main className="px-[2%]">
-          {children}
-        </main>
+        <main className="px-[2%]">{children}</main>
         <Footer />
 
         {/* Floating WhatsApp Button */}
