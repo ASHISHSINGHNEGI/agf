@@ -111,6 +111,7 @@ export default function ContactForm() {
                     placeholder="John Doe"
                     className="p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50 hover:bg-white transition-colors"
                     required
+                    autoFocus
                   />
                 </div>
 
@@ -191,18 +192,10 @@ export default function ContactForm() {
                     className="p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50 hover:bg-white transition-colors text-gray-700"
                   >
                     <option value="">Select a product category</option>
-                    <option value="Basmati & Non-Basmati Rice">
-                      Basmati &amp; Non-Basmati Rice
-                    </option>
-                    <option value="Refined Sugar">Refined Sugar</option>
-                    <option value="Black Tea">Black Tea</option>
-                    <option value="Coffee">Coffee</option>
-                    <option value="Whole & Ground Spices">
-                      Whole &amp; Ground Spices
-                    </option>
-                    <option value="Other Agri Commodities">
-                      Other Agri Commodities
-                    </option>
+                    <option value="Rice">Rice</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Spices">Spices</option>
+                    <option value="Agri Commodities">Agri Commodities</option>
                   </select>
                 </div>
 
